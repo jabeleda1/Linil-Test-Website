@@ -1,0 +1,209 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.about-container {
+    background-image: url(/Images/Official/header-about-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.about-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 100px;
+}
+
+.about-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.history-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.history-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.4;
+    font-size: 22px;
+    padding-left: 140px;
+}
+
+.history-box h2 {
+    font-size: 40px;
+}
+
+.history-box span {
+    color: rgb(186, 66, 69);
+}
+
+.history-image {
+    padding-right: 50px;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    border-top: 2px solid rgba(17, 17, 17, 0.589);
+    border-bottom: 2px solid rgba(17, 17, 17, 0.589);
+}
+
+.mission-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.mission-box h2 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mission-box p {
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.mission-box span {
+    color: rgb(186, 66, 69);
+}
+
+.employee-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.employee-image {
+    padding-left: 10px;
+}
+
+.employee-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.4;
+    font-size: 20px;
+    padding-right: 250px;
+}
+
+.employee-box h2 {
+    font-size: 36px;
+}
+
+.employee-box button {
+    font-size: 18px;
+    line-height: 1.6;
+
+    background-color: rgb(186, 66, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.employee-box button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.employee-box span {
+    color: rgb(186, 66, 69);
+}
+
+.values-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    border-top: 2px solid rgba(17, 17, 17, 0.589);
+    border-bottom: 2px solid rgba(17, 17, 17, 0.589);
+}
+
+.values-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.values-box h2 {
+    font-size: 45px;
+    text-align: center;
+    
+    position: relative;
+    bottom: 70px;
+}
+
+.values-box span {
+    color: rgb(186, 66, 69);
+}
+
+.values {
+    display: flex;
+    align-items: start;
+}
+
+.values-1 {
+    align-items: start;
+    flex-direction: column;
+    padding-right: 200px;
+}
+
+.values-1 h3 {
+    color: rgb(173, 62, 64);
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.values-2 {
+    align-items: start;
+    flex-direction: column;
+    padding-right: 200px;
+}
+
+.values-2 h3 {
+    color: rgb(173, 62, 64);
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.values-3 {
+    align-items: start;
+    flex-direction: column;
+}
+
+.values-3 h3 {
+    color: rgb(173, 62, 64);
+    border-left: 2px solid black;
+    padding-left: 10px;
+}

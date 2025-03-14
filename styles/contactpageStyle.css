@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+span {
+    color: rgb(187, 23, 23);
+}
+
+.contact-title-container {
+    background-image: url(/Images/Official/contact-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.contact-title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 100px;
+}
+
+.contact-title-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------- */
+
+.contact-section {
+    display: flex;
+    align-items: start;
+
+    position: relative;
+    right: 700px;
+    top: 150px;
+}
+
+.contact-box {
+    color: rgb(73, 73, 73);
+    font-size: 20x;
+}
+
+.contact-box h2 {
+    color: rgb(158, 67, 69);
+}
+
+.time-section {
+    display: flex;
+    align-items: start;
+
+    position: relative;
+    right: 745px;
+    top: 250px;
+}
+
+.time-box {
+    color: rgb(73, 73, 73);
+    font-size: 20x;
+}
+
+.time-box h2 {
+    color: rgb(158, 67, 69);
+}
+
+/* ----------------------------------------------- */
+
+.the-form-section {
+    position: relative;
+    bottom: 220px;
+    right: 80px;
+
+    border-left: 1px solid black;
+    padding-left: 180px;
+}
+
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-header-box {
+    color: rgb(158, 67, 69);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-header-box h2 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.contact-header-box p{
+    color: rgb(73, 73, 73);
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.form-box {
+    align-items: center;
+    
+}
+
+.info {
+    padding: 10px;
+}
+
+.info-section-1 {
+    display: flex;
+}
+
+.info-section-2 {
+    justify-content: center;
+}
+
+.submit-button {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#firstname {
+    display: flex;
+    padding: 5px;
+    padding-right: 50px;
+}
+
+#lastname {
+    display: flex;
+    padding: 5px;
+    padding-right: 50px;
+}
+
+#email {
+    display: flex;
+    padding: 5px;
+    padding-right: 280px;
+}
+
+#phone {
+    display: flex;
+    padding: 5px;
+    padding-right: 280px;
+}
+
+#comment {
+    display: flex;
+    padding: 5px;
+    padding-right: 25px;
+}
+
+#submit {
+    font-size: 16px;
+    line-height: 1.6;
+
+    background-color: rgb(167, 58, 60);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}

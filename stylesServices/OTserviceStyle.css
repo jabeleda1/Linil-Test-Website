@@ -1,0 +1,185 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.service-navbar-container {
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 2px solid rgb(94, 94, 94);
+}
+
+.service-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+
+    list-style-type: none;
+    background-color: rgb(196, 196, 196);
+
+    margin: 10px;
+    padding-left: 100px;
+}
+
+.service-nav a {
+    color: hsl(0, 0%, 19%);
+    text-decoration: none;
+    text-align: center;
+
+    margin-left: 20px;
+    display: block;
+}
+
+.service-nav a:hover {
+    color: rgb(186, 66, 69);
+}
+
+.health-service-container {
+    background-image: url(/Images/Official/header-health-service-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    
+}
+
+.health-service-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 100px;
+}
+
+.health-service-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.overview-service-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.overview-service-box {
+    position: relative;
+    bottom: 50px;
+    
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    font-size: 20px;
+
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 1000px;
+}
+
+.overview-service-box h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.overviewservice-box h3 {
+    padding-bottom: 10px;
+}
+
+.overview-service-box span {
+    color: rgb(186, 66, 69);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.how-service-box {
+    position: relative;
+    bottom: 120px;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    font-size: 20px;
+
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 600px;
+}
+
+.how-service-box h4{
+    color: rgb(138, 138, 138);
+    padding-bottom: 10px;
+}
+
+.service-list {
+    line-height: 1.6;
+    padding-left: 30px; 
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.consultation-service-box {
+    position: relative;
+    bottom: 190px;
+    
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    font-size: 20px;
+
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 1000px;
+}
+
+.consultation-service-box button {
+    font-size: 16px;
+    font-style: bold;
+
+    background-color: rgb(186, 66, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 30px;
+}
+
+.consultation-service-box button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.OT-image {
+    position: relative;
+    bottom: 900px;
+    left: 1200px;
+
+    height: 0px;
+}
+

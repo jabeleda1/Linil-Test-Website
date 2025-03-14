@@ -1,0 +1,299 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.section-1-container {
+    padding: 110px 445px;
+    background-image: url(/Images/Official/HomePage-Image-Slide.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.section-1-box {
+    position: relative;
+    bottom: -100px;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    padding: 30px 100px;
+}
+
+.section-1 h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.section-1 p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.section-1 button {
+    font-size: 16px;
+    font-style: bold;
+    margin: 40px;
+
+    background-color: rgb(186, 66, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.section-1 button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 60px;
+    background-color: rgb(66, 66, 66);
+}
+
+.schedule-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.schedule-box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    padding-right: 100px;
+}
+
+.schedule-box button {
+    font-size: 16px;
+    font-style: bold;
+
+    background-color: rgb(186, 66, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.schedule-box button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.CHAP-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    /* section border
+    border-top: 2px solid rgba(17, 17, 17, 0.589);
+    border-bottom: 2px solid rgba(17, 17, 17, 0.589); */
+}
+
+.CHAP-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.2;
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+.CHAP-box h2 {
+    font-size: 36px;
+}
+
+.CHAP-box p {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.CHAP-box span {
+    color: rgb(186, 66, 69);
+}
+
+.CHAP-image {
+   position: relative;
+   right: 200px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.location-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.4;
+    font-size: 20px;
+    padding-left: 200px;
+}
+
+.location-box h2 {
+    font-size: 36px;
+}
+
+.location-box button {
+    font-size: 18px;
+    line-height: 1.6;
+
+    background-color: rgb(186, 66, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.location-box button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.location-box span {
+    color: rgb(186, 66, 69);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px;
+
+    background-color:rgb(66, 66, 66);
+}
+
+.card {
+    width: 500px; /* increase size of cards */
+    background-color: #eeeeee; /* inner card color */
+    overflow: hidden;
+    box-shadow: 0px, 2px, 4px rgba(0,0,0,0.2);
+    margin: 30px; /* changes gap width */ 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    color: rgb(59, 59, 59);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: rgb(65, 65, 65);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.card-content .learnButton {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: rgb(186, 66, 69);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.card-content .learnButton:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.card-content .scheduleButton {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: rgb(186, 66, 69);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.card-content .scheduleButton:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.card-content span {
+    color: rgb(163, 62, 64);
+}
+
+.career-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.career-image {
+    padding-left: 10px;
+}
+
+.career-box {
+    color: rgb(68, 68, 68);
+    line-height: 1.4;
+    font-size: 20px;
+    padding-right: 350px;
+}
+
+.career-box h2 {
+    font-size: 36px;
+}
+
+.career-box button {
+    font-size: 18px;
+    line-height: 1.6;
+
+    background-color: rgb(186, 66, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.career-box button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.career-box span {
+    color: rgb(186, 66, 69);
+}

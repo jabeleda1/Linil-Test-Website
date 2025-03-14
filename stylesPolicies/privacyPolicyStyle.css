@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.careers-title-container {
+    background-image: url(/Images/Elderly_Image_Slide_5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    
+}
+
+.careers-title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 100px;
+}
+
+.careers-title-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* --------------------------------------------- */
+
+
+.terms-service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+
+    margin: 100px;
+    padding-left: 100px;
+}
+
+.terms-service-box {
+    text-align: left; 
+    line-height: 1.6;
+    color: rgb(68, 68, 68);
+
+    margin-bottom: 20px;
+}
+
+.terms-service-box h3 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.terms-service-box h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.privacy-list {
+    line-height: 1.6;
+    padding-left: 30px; 
+}

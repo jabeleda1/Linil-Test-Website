@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | Linil Visiting Nurses INC.</title>
+    <link rel="stylesheet" href="/styles/contactpageStyle.css">
+    <link rel="stylesheet" href="/styles/headerNavStyle.css">
+</head>
+
+<body>
+
+<header>
+        <div class="flex-container"> <!--Navigation Bar-->
+            <div class="contact">Phone: (407)-790-4848</div>
+            <div class="contact">Email: patientinfo@linilvisitingnurses.com</div>   
+            <div class="contact">Florida State License: #299991827</div>    
+        </div>
+
+        <div class="header-container">
+    
+            <!-- <div class="menu">
+                <a href="homePage.html" target=_self title="Go to Home Page">
+                    <img src="TEMP/Menu Icon Image.png" alt="Linil Logo" title="Home Page"> 
+                </a>
+            </div> -->
+
+            <div class="logo">
+                <a href="homePage.html" target=_self title="Go to Home Page">
+                    <img src="/TEMP/Linil Logo.png" alt="Linil Logo" title="Home Page"> 
+                </a>
+            </div>
+
+            <div class ="headerTitle">
+                <a href="homePage.html" target=_self title="Go to Home Page">
+                    LINIL VISITING <span>NURSES INC.</span>
+                </a>
+            </div>
+
+            <div class="searchBar">
+                <label for="search"></label>
+                <input type="search" id="search" placeholder="Search...">
+            </div>
+
+        </div>
+
+        <nav class="navbar-container">
+            <ul class="nav">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="aboutPage.html">About Linil</a></li>
+                <li><a href="healthservicePage.html">Health Services</a></li>  <!--&#x25BE-->
+                <li><a href="careersPage.html">Careers</a></li>
+                <li><a href="consultationPage.html">Schedule Consultation</a></li>
+                <li><a href="contactPage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+    <!--About Header Title-->
+    <div class="contact-title-container"> 
+        <div class ="contact-title-box">
+            <h2>Contact Us</h2>
+        </div>
+    </div>
+        
+    </div>
+     <!--Section 1-->   
+        <section class="contact-form-container">
+            <div class="contact-section">
+                <div class="contact-box">
+                    <h2>Contact Information</h2><br>
+                    <p>Address: 101 E Faith Terrace<br>Maitland, FL 32751</p><br>
+                    <p>Phone: (407) 790-4848<br>Fax: (407) 790-4847</p><br>
+                    <p>Email: patientinfo@linilvisitingnurses.com</p>
+                </div>
+            </div>
+
+            <div class="time-section">
+                <div class="time-box">
+                    <h2>Operating Hours</h2><br>
+                    <p>Monday thru Friday<br>8:30AM - 5:30PM</p><br>
+                    <p>Saturday thru Sunday<br>Closed</p>
+                </div>
+            </div>
+            
+            <div class="the-form-section">
+                <div class="contact-header-box">
+                    <h2>Contact Form</h2>
+                    <p>If you believe you are having a medical emergency, please call 911</p>
+                </div>
+    
+                <form class="form-box" action="homePage.php" method="POST">
+                    <div class="info-section-1">
+                        <div class="info">
+                            <label for="firstname">First Name <span>*</span></label>
+                            <input type="text" id="firstname" required>
+                        </div>
+                        
+                        <div class="info">
+                            <label for="lastname">Last Name <span>*</span></label>
+                            <input type="text" id="lastname" required>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section-2">
+                        <div class="info">
+                            <label for="email">Email<span> *</span></label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="info">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+        
+                        <div class="info">
+                            <label for="comment">Message</label>
+                            <textarea id="comment" rows="4" cols="58"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="submit-button"><input type="submit" id="submit"></div>
+    
+                </form>
+            </div>
+            
+            
+        </section>
+            
+
+</main>
+
+<footer>
+
+    <div class="footer-container">
+        <div class="footer-title-box">
+            <h2>Linil Visiting<br>Nurses Inc.</h2><br>
+        </div>
+
+        <div class="footer-contact-box">
+            <h3>Contact Us</h3>
+            <p>
+                101 E. Faith Terrace,<br>
+                Maitland, FL 32751<br><br>
+                Phone: (407) 790-4848<br>
+                Fax: (407) 790-4847<br>
+                Email: patientinfo@linilvisitingnurses.com<br>
+            </p>
+            </div>
+        
+        <div class="footer-quicklinks-box">
+            <h3>Quick Links</h3>
+            <ul class="quicklinks">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="aboutPage.html">About Linil</a></li>
+                <li><a href="healthservicePage.html">Health Services</a></li>  <!--&#x25BE-->
+                <li><a href="careersPage.html">Careers</a></li>
+                <li><a href="consultationPage.html">Schedule Consultation</a></li>
+                <li><a href="contactPage.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+            <div class="footer-policylinks-box">
+                <h3>Policies</h3>
+                <ul class="policylinks">
+                    <li><a href="/htmlPolicies/termsServicePage.html">Terms of Use</a></li>
+                    <li><a href="/htmlPolicies/privacyPolicyPage.html">Privacy Policy</a></li>
+                    <li><a href="/htmlPolicies/rightsResponsibilitiesPage.html">Patient Rights and Responsibilities</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="copyright-box">
+        © All rights reserved. Copyright 2025. Arrojo Holdings, LLC
+    </div>
+    
+</footer>
+
+</body>
+
+

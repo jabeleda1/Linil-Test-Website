@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.careers-title-container {
+    background-image: url(/Images/Official/header-career-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    
+}
+
+.careers-title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 100px;
+}
+
+.careers-title-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* --------------------------------------------- */
+
+.careers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+                        
+.careers-box {
+    text-align: center; 
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    font-size: 20px;
+
+    margin: 60px;
+    margin-bottom: 60px;
+}
+
+.careers-box h2 {
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.careers-box span {
+    color: rgb(186, 66, 69);
+}
+
+.service-navbar-container h4 {
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.service-nav {
+    margin: 30px;
+    text-align: left; 
+    color: rgb(68, 68, 68);
+    line-height: 1.2;
+    
+    font-size: 22px;
+    list-style: none;
+}
+
+.service-nav a{
+    display: block;
+    color: rgb(173, 49, 51);
+    text-decoration: none;
+
+    border: 1px solid hsla(0, 0%, 13%, 0.11);
+    padding: 15px;
+    padding-right: 940px;
+}
+
+.service-nav a:hover {
+    box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.432);
+    color: hsl(0, 0%, 31%) ;
+}
