@@ -15,15 +15,15 @@ img{
     display: block;
 }
 
-.careers-title-container {
-    background-image: url(/Images/Elderly_Image_Slide_5.png);
+.policy-title-container {
+    background-image: url(/Images/Official/contact-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
     
 }
 
-.careers-title-box{
+.policy-title-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ img{
     padding: 100px;
 }
 
-.careers-title-box h2 {
+.policy-title-box h2 {
     font-size: 40px;
     font-weight: bold;
 }
@@ -40,7 +40,7 @@ img{
 /* --------------------------------------------- */
 
 
-.terms-service-container {
+.privacy-container {
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -50,7 +50,7 @@ img{
     padding-left: 100px;
 }
 
-.terms-service-box {
+.privacy-box {
     text-align: left; 
     line-height: 1.6;
     color: rgb(68, 68, 68);
@@ -58,12 +58,12 @@ img{
     margin-bottom: 20px;
 }
 
-.terms-service-box h3 {
+.privacy-box h3 {
     font-size: 40px;
     padding-bottom: 30px;
 }
 
-.terms-service-box h4 {
+.privacy-box h4 {
     font-size: 20px;
     padding-bottom: 10px;
 }

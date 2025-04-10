@@ -15,15 +15,15 @@ img{
     display: block;
 }
 
-.careers-title-container {
-    background-image: url(/Images/Elderly_Image_Slide_5.png);
+.policy-title-container {
+    background-image: url(/Images/Official/contact-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
     
 }
 
-.careers-title-box{
+.policy-title-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ img{
     padding: 100px;
 }
 
-.careers-title-box h2 {
+.policy-title-box h2 {
     font-size: 40px;
     font-weight: bold;
 }

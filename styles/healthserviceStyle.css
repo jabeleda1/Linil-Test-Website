@@ -73,14 +73,14 @@ img{
     font-weight: bold;
 }
 
-.nurse-service-container {
+.linil-service-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 60px;
 }
 
-.nurse-service-box {
+.linil-service-box {
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -92,12 +92,12 @@ img{
     width: 1660px;
 }
 
-.nurse-service-box h2 {
+.linil-service-box h2 {
     font-size: 50px;
     text-align: center;
 }
 
-.nurse-service-box span {
+.linil-service-box span {
     color: rgb(186, 66, 69);
 }
 
@@ -174,4 +174,8 @@ img{
 
 .service-card-content .scheduleButton:hover {
     background-color: rgb(88, 88, 88);
+}
+
+.service-card-content span {
+    color: rgb(186, 66, 69);
 }

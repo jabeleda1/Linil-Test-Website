@@ -76,14 +76,14 @@ img{
     font-weight: bold;
 }
 
-.nurse-service-container {
+.therapy-service-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 60px;
 }
 
-.nurse-service-box {
+.therapy-service-box {
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -95,12 +95,12 @@ img{
     width: 1660px;
 }
 
-.nurse-service-box h2 {
+.therapy-service-box h2 {
     font-size: 50px;
     text-align: center;
 }
 
-.nurse-service-box span {
+.therapy-service-box span {
     color: rgb(186, 66, 69);
 }
 
