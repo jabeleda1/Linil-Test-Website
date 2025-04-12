@@ -67,3 +67,26 @@ img{
     font-size: 20px;
 }
 
+/* --------------------------------------------- */
+
+.agencies-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+    border-top: 1px solid black;
+    padding-top: 40px;
+}
+
+.agencies-box {
+    text-align: left; 
+    line-height: 1.6;
+}
+
+.agencies-box h4{
+    font-size: 22px;
+}
+
+.agencies-box p{
+    font-size: 16px;
+}

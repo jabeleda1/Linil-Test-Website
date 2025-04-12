@@ -293,3 +293,148 @@ img{
 .career-box span {
     color: rgb(186, 66, 69);
 }
+
+@media (max-width: 600px) {
+
+    .home-container {
+        width: 100%;
+        
+    }
+
+    .schedule-container {
+        width: 100%;
+    }
+
+    .CHAP-container {
+        width: 100%;
+    }
+
+    .location-container {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .career-container {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 601px) {
+
+    .home-container {
+        width: 100%;
+        
+    }
+
+    .schedule-container {
+        width: 100%;
+    }
+
+    .CHAP-container {
+        width: 100%;
+    }
+
+    .location-container {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .career-container {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .home-container {
+        width: 100%;
+        
+    }
+
+    .schedule-container {
+        width: 100%;
+    }
+
+    .CHAP-container {
+        width: 100%;
+    }
+
+    .location-container {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .career-container {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .home-container {
+        width: 100%;
+        
+    }
+
+    .schedule-container {
+        width: 100%;
+    }
+
+    .CHAP-container {
+        width: 100%;
+    }
+
+    .location-container {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .career-container {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .home-container {
+        width: 100%;
+        
+    }
+
+    .schedule-container {
+        width: 100%;
+    }
+
+    .CHAP-container {
+        width: 100%;
+    }
+
+    .location-container {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .career-container {
+        width: 100%;
+    }
+    
+}

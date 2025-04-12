@@ -52,13 +52,14 @@ img{
 
 .terms-service-box {
     text-align: left; 
+    line-height: 1.6;
     color: rgb(68, 68, 68);
 
     margin-bottom: 20px;
 }
 
 .terms-service-box h3 {
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 30px;
 }
 
