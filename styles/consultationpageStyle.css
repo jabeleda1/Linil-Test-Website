@@ -135,3 +135,36 @@ span {
     border: none;
     cursor: pointer;
 }
+
+/* --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .consultation-title-container {
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    .consultation-title-box {
+      padding: 20px;
+    }
+  
+    .consultation-title-box h2 {
+      font-size: 28px;
+      padding: 20px;
+    }
+
+    .consultation-header-box {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    .consultation-form-container {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .form-box {
+        padding: 20px 0;
+    }
+}

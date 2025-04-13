@@ -171,6 +171,7 @@ img{
 .values {
     display: flex;
     align-items: start;
+    
 }
 
 .values-1 {
@@ -206,4 +207,51 @@ img{
     color: rgb(173, 62, 64);
     border-left: 2px solid black;
     padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    .about-box {
+      padding: 20px;
+    }
+  
+    .about-box h2 {
+      font-size: 28px;
+      padding: 20px;
+    }
+  
+    .history-container,
+    .mission-container,
+    .employee-container {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .values-container {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .values-box {
+        padding-top: 60px;
+        margin: 10px;
+    }
+  
+    .history-box,
+    .mission-box,
+    .employee-box {
+      padding: 0;
+    }
+  
+    .history-image,
+    .employee-image {
+      position: static;
+      padding: 20px 0;
+    }
 }

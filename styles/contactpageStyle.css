@@ -200,3 +200,34 @@ span {
     border: none;
     cursor: pointer;
 }
+
+/* ----------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .contact-title-container {
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    .contact-title-box {
+      padding: 20px;
+    }
+  
+    .contact-title-box h2 {
+      font-size: 28px;
+      padding: 20px;
+    }
+
+    .contact-header-box {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    .contact-section,
+    .time-section,
+    .service-area-section {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+}
