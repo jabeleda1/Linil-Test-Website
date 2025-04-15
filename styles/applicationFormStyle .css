@@ -141,7 +141,7 @@ span {
 
     .application-header-box {
         text-align: center;
-        font-size: 26px;
+        font-size: 22px;
         width: 100%;
         margin: 0;
         padding: 40px 40px;
@@ -159,23 +159,31 @@ span {
         margin: 0;
         padding: 0;
     }
+    
+    .info-section-1,
+    .info-section-2,
+    .info-section-3 {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .info {
+        font-size: 14px;
+        width: 50%;
+    }
 
     #firstname,
     #lastname,
     #email,
     #phone {
-        display: flex;
-        padding: 5px;
-        padding-right: 30px;
-    }
-
-    #position {
-        display: flex;
-        padding: 5px;
-        padding-right: 240px;
+        width: 100%;
+        padding: 3%; 
+        padding-right: 1%;
     }
 
     #submit {
+        font-size: 12px;
         position: relative;
         bottom: 14px;
      }
