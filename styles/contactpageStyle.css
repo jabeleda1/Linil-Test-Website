@@ -40,100 +40,70 @@ span {
     font-weight: bold;
 }
 
-/* -------------------------------------------------------- */
-
-.contact-section {
+.contact-form-container {
     display: flex;
-    align-items: start;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-    position: relative;
-    right: 700px;
-    top: 120px;
+    width: 70%;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.contact-box {
-    color: rgb(73, 73, 73);
-    font-size: 20x;
-}
+/* --------------------Left Content------------------------ */
 
-.contact-box h2 {
-    color: rgb(158, 67, 69);
-}
-
-.time-section {
+.content-container {
     display: flex;
-    align-items: start;
+    flex-direction: column;
 
-    position: relative;
-    right: 755px;
-    top: 160px;
-}
-
-.time-box {
+    border-right: 1px solid rgb(73, 73, 73);
+    padding-right: 100px;
     color: rgb(73, 73, 73);
-    font-size: 20x;
 }
 
-.time-box h2 {
-    color: rgb(158, 67, 69);
-}
-
-.service-area-section {
-    position: relative;
-    right: 765px;
-    bottom: 320px;
-}
-
+.contact-box,
+.time-box,
 .service-area-box {
-    color: rgb(73, 73, 73);
-    font-size: 20x;
+    list-style: none;
 }
 
-.service-area-box h2 {
+.contact-info,
+.time-info,
+.service-area-info {
+    padding: 20px;
+    line-height: 1.2;
+}
+
+.contact-info h2,
+.time-info h2,
+.service-area-info h2 {
     color: rgb(158, 67, 69);
     padding-bottom: 10px;
-}
-
-.service-area-box li {
-    color: rgb(73, 73, 73);
-    list-style: none;
-    line-height: 1.4;
 }
 
 /* ----------------------------------------------- */
 
-.the-form-section {
-    position: relative;
-    bottom: 200px;
-    right: 100px;
-
-    border-left: 1px solid black;
-    padding-left: 180px;
+.form-container {
+    margin: 0;
+    padding-right: 0;
 }
 
-.contact-form-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact-header-box {
+.contact-header {
     color: rgb(158, 67, 69);
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
-    align-items: center;
 }
 
-.contact-header-box h2 {
+.contact-header h2 {
     font-size: 50px;
+    text-align: center;
     padding-bottom: 10px;
 }
 
-.contact-header-box p{
+.contact-header p{
     color: rgb(73, 73, 73);
     font-size: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -215,15 +185,87 @@ span {
   
     .contact-title-box h2 {
       font-size: 28px;
-      padding: 0;
+
     }
 
-    .contact-header-box h2 {
-        font-size: 40px;
+    .contact-form-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
     }
 
-    .contact-header-box p {
+    .content-container {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+        border-bottom: 1px solid rgb(73, 73, 73);
+    }
+
+    .content-container li {
+        line-height: 1.4;
+       font-size: 14px;
+       font-weight: bold;
+    }
+
+    .contact-header {
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .contact-header h2{
+        font-size: 36px;
+    }
+
+    .contact-header p{
+        margin: auto;
+        padding: 1;
+        width: 70%;
         font-size: 12px;
+    }
+
+    .form-box {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-section-1,
+    .info-section-2,
+    .info-section-3 {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .info {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    #firstname,
+    #lastname {
+    width: 100%;
+    padding: 3%; 
+    padding-right: 1%;
+    }
+
+    #email,
+    #phone {
+        width: 212%;
+        padding: 3%; 
+    }
+
+    #comment {
+        width: 212%; 
+        padding: 2%;
+    }
+
+    #submit {
+       position: relative;
+       bottom: 10px;
     }
 
 }

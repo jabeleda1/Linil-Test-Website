@@ -133,13 +133,11 @@ img{
     }
   
     .careers-title-box {
-      position: relative;
       padding: 20px;
     }
   
     .careers-title-box h2 {
       font-size: 32px;
-      padding: 20px;
     }
 
     .position-container {
@@ -151,6 +149,11 @@ img{
         line-height: 1.6;
     }
 
+    .position-box h3,
+    .position-box li {
+        font-size: 16px;
+    }
+
     .description-box {
         line-height: 1.6;
         text-align: left; 
@@ -160,7 +163,7 @@ img{
 
     .position-box h3,
     .description-box h3{
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 

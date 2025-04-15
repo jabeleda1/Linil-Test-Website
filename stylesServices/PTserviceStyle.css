@@ -183,7 +183,7 @@ img{
   
       .service-nav {
           flex-direction: row;
-          gap: 30px;
+          gap: 20px;
           margin-top: 10px;
           width: 60%;
         }

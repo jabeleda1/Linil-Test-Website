@@ -98,6 +98,9 @@ img{
     
     font-size: 22px;
     list-style: none;
+
+    position: relative;
+    right: 30px;
 }
 
 .service-nav a{
@@ -124,39 +127,38 @@ img{
     }
   
     .careers-title-box {
-      position: relative;
       padding: 20px;
     }
   
     .careers-title-box h2 {
       font-size: 28px;
-      padding: 20px;
     }
 
     .careers-box {
-      padding: 40px;
+      text-align: center;
+      padding-bottom: 40px;
       margin: 0;
       width: 100%;
     }
 
     .careers-box h2 {
-      position: relative;
-      right: 25px;
-
       flex-direction: row;
-      text-align: center;
+      
 
       line-height: 1.4;
-      font-size: 40px;
+      font-size: 30px;
 
       margin: 0;
       padding: 1;
-      width: 120%;
+      width: 100%;
     }
 
     .careers-box p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
         width: 100%;
-        margin: auto;
+        line-height: 1.6;
       }
   
     .careers-container,
@@ -169,20 +171,26 @@ img{
     .service-navbar-container {
         width: 100%;
         margin: 0;
+        padding: 0;
     }
 
     .service-navbar-container h4 {
-        width: 110%;
+        width: 100%;
         margin: 0;
-
+        font-size: 16px;
         text-align: center;
-        font-size: 18px;
-
-        position: relative;
-        right: 10px;
     }
-    .service-nav a {
-        padding: 20px 0;
+
+    .service-nav {
+        width: 100%;
+    }
+
+    .service-nav a{
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid hsla(0, 0%, 13%, 0.11);
+        padding: 10px;
+        margin: 0;
     }
     
 }

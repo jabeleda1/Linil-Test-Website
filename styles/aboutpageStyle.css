@@ -48,18 +48,17 @@ img{
     line-height: 1.4;
     font-size: 22px;
     padding-left: 140px;
+    width: 60%;
 }
 
-.history-box h2 {
-    font-size: 40px;
+.history-box h2,
+.employee-box h2 {
+    font-size: 37px;
 }
 
-.history-box span {
-    color: rgb(186, 66, 69);
-}
-
-.history-image {
-    padding-right: 50px;
+.history-box p,
+.employee-box p {
+    width: 75%;
 }
 
 .mission-container {
@@ -78,6 +77,7 @@ img{
     color: rgb(68, 68, 68);
     line-height: 1.4;
     font-size: 20px;
+    width: 50%;
 }
 
 .mission-box h2 {
@@ -92,10 +92,6 @@ img{
     font-size: 18px;
 }
 
-.mission-box span {
-    color: rgb(186, 66, 69);
-}
-
 .employee-container {
     display: flex;
     justify-content: space-between;
@@ -103,19 +99,12 @@ img{
     background-color: rgb(231, 231, 231);
 }
 
-.employee-image {
-    padding-left: 10px;
-}
-
 .employee-box {
     color: rgb(68, 68, 68);
     line-height: 1.4;
     font-size: 20px;
-    padding-right: 250px;
-}
-
-.employee-box h2 {
-    font-size: 36px;
+    padding-left: 200px;
+    width: 50%;
 }
 
 .employee-box button {
@@ -134,79 +123,50 @@ img{
     background-color: rgb(88, 88, 88);
 }
 
-.employee-box span {
-    color: rgb(186, 66, 69);
+.values-container {
+    color: rgb(68, 68, 68);
+    text-align: left;
+    width: 100%;
+    margin: 0;
 }
 
-.values-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    padding-top: 160px;
-    padding-bottom: 160px;
-
-    border-top: 2px solid rgba(17, 17, 17, 0.589);
-    border-bottom: 2px solid rgba(17, 17, 17, 0.589);
+.values-container h2 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .values-box {
-    color: rgb(68, 68, 68);
-    line-height: 1.4;
-    font-size: 20px;
-}
-
-.values-box h2 {
-    font-size: 45px;
-    text-align: center;
-    
-    position: relative;
-    bottom: 70px;
-}
-
-.values-box span {
-    color: rgb(186, 66, 69);
-}
-
-.values {
     display: flex;
-    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: row;
     
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
-.values-1 {
-    align-items: start;
-    flex-direction: column;
-    padding-right: 200px;
+.values-section {
+    margin: 50px;
+    margin-right: 100px;
+    width: 20%;
 }
 
-.values-1 h3 {
+.values-section h3 {
     color: rgb(173, 62, 64);
     border-left: 2px solid black;
     padding-left: 10px;
 }
 
-.values-2 {
-    align-items: start;
-    flex-direction: column;
-    padding-right: 200px;
+.values-section p {
+    padding-top: 20px;
 }
 
-.values-2 h3 {
-    color: rgb(173, 62, 64);
-    border-left: 2px solid black;
-    padding-left: 10px;
-}
-
-.values-3 {
-    align-items: start;
-    flex-direction: column;
-}
-
-.values-3 h3 {
-    color: rgb(173, 62, 64);
-    border-left: 2px solid black;
-    padding-left: 10px;
+.history-box span,
+.mission-box span,
+.employee-box span,
+.values-container span {
+    color: rgb(186, 66, 69);
 }
 
 @media (max-width: 768px) {
@@ -229,29 +189,46 @@ img{
     .employee-container {
       flex-direction: column;
       padding: 40px 20px;
-      text-align: center;
-    }
-
-    .values-container {
-      flex-direction: column;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .values-box {
-        padding-top: 60px;
-        margin: 10px;
     }
   
     .history-box,
     .mission-box,
     .employee-box {
       padding: 0;
+      width: 100%;
+    }
+
+    .history-box h2,
+    .mission-box h2,
+    .employee-box h2,
+    .values-box h2 {
+      font-size: 35px;
+    }
+
+    .history-box p,
+    .mission-box p,
+    .employee-box p {
+      font-size: 16px;
+      width: 100%;
     }
   
     .history-image,
     .employee-image {
       position: static;
       padding: 20px 0;
+    }
+
+    .value-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .values-box {
+        flex-direction: column;
+    }
+
+    .values-section {
+        line-height: 1.4;
+        width: 80%;
     }
 }

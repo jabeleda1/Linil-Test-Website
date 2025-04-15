@@ -186,6 +186,7 @@ img{
         align-items: start;
         flex-direction: column;
         padding: 0;
+        width: 100%;
     }
 
     .nurse-service-box h2 {
@@ -197,7 +198,7 @@ img{
     }
 
     .nurse-service-box p {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .service-navbar-container {

@@ -73,27 +73,19 @@ img{
     font-weight: bold;
 }
 
-.overview-service-container {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
+.infusion-service-container {
+    flex-direction: column;
+    width: 50%;
+    margin-left: 6%;
 }
 
 .overview-service-box {
-    position: relative;
-    bottom: 50px;
-    
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-
     color: rgb(68, 68, 68);
     line-height: 1.6;
     font-size: 20px;
 
     margin-top: 100px;
-    margin-left: 130px;
-    width: 1000px;
+    width: 100%;
 }
 
 .overview-service-box h2 {
@@ -112,20 +104,12 @@ img{
 /* -------------------------------------------------------------------------------- */
 
 .how-service-box {
-    position: relative;
-    bottom: 120px;
-
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-
     color: rgb(68, 68, 68);
     line-height: 1.6;
     font-size: 20px;
 
-    margin-top: 100px;
-    margin-left: 130px;
-    width: 600px;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .how-service-box h4{
@@ -141,20 +125,12 @@ img{
 /* -------------------------------------------------------------------------------- */
 
 .consultation-service-box {
-    position: relative;
-    bottom: 190px;
-    
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-
     color: rgb(68, 68, 68);
     line-height: 1.6;
     font-size: 20px;
 
-    margin-top: 100px;
-    margin-left: 130px;
-    width: 1000px;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .consultation-service-box button {
@@ -168,7 +144,8 @@ img{
     border: none;
     cursor: pointer;
 
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .consultation-service-box button:hover {
@@ -176,10 +153,68 @@ img{
 }
 
 .infusion-image {
-    position: relative;
-    bottom: 850px;
-    left: 1200px;
-
-    height: 0px;
+    position: absolute;
+    right: 100px;
+    top: 630px;
 }
 
+/* --------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .health-service-container {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .health-service-box {
+      padding: 20px;
+    }
+  
+    .health-service-box h2 {
+      font-size: 28px;
+      padding: 20px;
+    }
+
+    .service-navbar-container {
+        flex-direction: row;
+        padding: 10px;
+        width: 100%;
+      }
+  
+      .service-nav {
+          flex-direction: row;
+          gap: 20px;
+          margin-top: 10px;
+          width: 60%;
+        }
+      
+        .service-nav a {
+          width: 100%;
+        }
+    
+        .infusion-service-container {
+            padding: 40px;
+            margin: 0;
+            width: 100%;
+    
+            line-height: 1.6;
+        }
+
+        .overview-service-box {
+            margin: 0;
+        }
+
+        .how-service-box {
+            margin: 0;
+        }
+
+        .overview-service-box h2{
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .infusion-image {
+            position: static;
+            padding: 20px 0;
+        }
+}

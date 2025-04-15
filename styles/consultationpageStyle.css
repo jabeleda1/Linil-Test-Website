@@ -135,8 +135,7 @@ span {
     }
   
     .consultation-title-box h2 {
-      font-size: 28px;
-      padding: 20px;
+      font-size: 24px;
     }
 
     .consultation-header-box {
@@ -155,13 +154,11 @@ span {
     .consultation-header-box {
         text-align: center;
         width: 100%;
-        font-size: 20px;
-        margin: 30px;
-       
+        font-size: 18px;
+        margin: 40px;
     }
 
     .form-box {
-        
         width: 100%;
         margin: 0;
         padding: 0;
@@ -176,6 +173,7 @@ span {
     }
 
     .info {
+        font-size: 14px;
         width: 50%;
     }
 
@@ -183,20 +181,19 @@ span {
     #lastname,
     #email,
     #phone {
-    display: flex;
-    padding: 5px;
-    padding-right: 20px;
+    width: 100%;
+    padding: 3%; 
+    padding-right: 1%;
     }
 
     #reason {
-        display: flex;
-        padding: 5px; 
-        padding-right: 236px;
+        width: 212%;
+        padding: 3%; 
     }
 
     #comment {
-        display: flex;
-        padding: 5px;
+        width: 212%; 
+        padding: 2%;
     }
 
     #submit {
