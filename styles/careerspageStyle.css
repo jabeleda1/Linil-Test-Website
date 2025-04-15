@@ -57,6 +57,24 @@ img{
     margin-bottom: 60px;
 }
 
+.careers-box {
+    text-align: center; 
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    font-size: 20px;
+
+    margin: 60px;
+    margin-bottom: 60px;
+}
+
+.careers-box p {
+    text-align: center; 
+    line-height: 1.6;
+
+    margin: auto;
+    width: 70%;
+}
+
 .careers-box h2 {
     font-size: 45px;
     padding-bottom: 30px;
@@ -101,11 +119,12 @@ img{
 
 @media (max-width: 768px) {
     .careers-title-container {
-      padding: 80px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
   
     .careers-title-box {
+      position: relative;
       padding: 20px;
     }
   
@@ -113,15 +132,57 @@ img{
       font-size: 28px;
       padding: 20px;
     }
+
+    .careers-box {
+      padding: 40px;
+      margin: 0;
+      width: 100%;
+    }
+
+    .careers-box h2 {
+      position: relative;
+      right: 25px;
+
+      flex-direction: row;
+      text-align: center;
+
+      line-height: 1.4;
+      font-size: 40px;
+
+      margin: 0;
+      padding: 1;
+      width: 120%;
+    }
+
+    .careers-box p {
+        width: 100%;
+        margin: auto;
+      }
   
     .careers-container,
     .service-navbar-container {
       flex-direction: column;
       padding: 40px 20px;
-      text-align: center;
+      text-align: left;
     }
 
+    .service-navbar-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .service-navbar-container h4 {
+        width: 110%;
+        margin: 0;
+
+        text-align: center;
+        font-size: 18px;
+
+        position: relative;
+        right: 10px;
+    }
     .service-nav a {
         padding: 20px 0;
     }
+    
 }

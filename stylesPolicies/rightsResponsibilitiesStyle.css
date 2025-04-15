@@ -90,3 +90,63 @@ img{
 .agencies-box p{
     font-size: 16px;
 }
+
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .policy-title-container {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .policy-title-box {
+      position: relative;
+      padding: 20px;
+    }
+  
+    .policy-title-box h2 {
+      font-size: 32px;
+      padding: 20px;
+    }
+
+    .patient-rights-service-container {
+        padding: 40px;
+        margin: 0;
+        width: 100%;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .patient-rights-service-box {
+        line-height: 1.6;
+        text-align: left; 
+
+        width: 100%;
+    }
+
+    .patient-rights-service-box h3 {
+        font-size: 34px;
+    }
+
+    .agencies-container {
+        padding: 40px;
+        margin: 0;
+        width: 100%;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .agencies-box {
+        line-height: 1.4;
+        text-align: left; 
+
+        width: 100%;
+    }
+
+    .agencies-box h4 {
+        font-size: 22px;
+        text-align: left; 
+    }
+}

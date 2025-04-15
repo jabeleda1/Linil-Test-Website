@@ -89,24 +89,9 @@ span {
 
 /* --------------------------------------------------------- */
 
-#firstname {
-    display: flex;
-    padding: 5px;
-    padding-right: 100px;
-}
-
-#lastname {
-    display: flex;
-    padding: 5px;
-    padding-right: 100px;
-}
-
-#email {
-    display: flex;
-    padding: 5px;
-    padding-right: 100px;
-}
-
+#firstname,
+#lastname,
+#email,
 #phone {
     display: flex;
     padding: 5px;
@@ -135,4 +120,63 @@ span {
     padding: 10px 25px;
     border: none;
     cursor: pointer;
+}
+
+/* -------------------------------------------- */
+
+@media (max-width: 768px) {
+    .application-title-container {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .application-title-box {
+      padding: 20px;
+    }
+  
+    .application-title-box h2 {
+      font-size: 28px;
+      padding: 20px;
+    }
+
+    .application-header-box {
+        text-align: center;
+        font-size: 26px;
+        width: 100%;
+        margin: 0;
+        padding: 40px 40px;
+        
+    }
+
+    .application-form-container {
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .form-box {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #firstname,
+    #lastname,
+    #email,
+    #phone {
+        display: flex;
+        padding: 5px;
+        padding-right: 30px;
+    }
+
+    #position {
+        display: flex;
+        padding: 5px;
+        padding-right: 240px;
+    }
+
+    #submit {
+        position: relative;
+        bottom: 14px;
+     }
 }

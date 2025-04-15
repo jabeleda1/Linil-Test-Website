@@ -58,7 +58,8 @@ span {
     font-weight: bold;
     text-align: center;
 
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    width: 40%;
 }
 
 .form-box {
@@ -88,24 +89,9 @@ span {
 
 /* --------------------------------------------------------- */
 
-#firstname {
-    display: flex;
-    padding: 5px;
-    padding-right: 100px;
-}
-
-#lastname {
-    display: flex;
-    padding: 5px;
-    padding-right: 100px;
-}
-
-#email {
-    display: flex;
-    padding: 5px;
-    padding-right: 100px;
-}
-
+#firstname,
+#lastname,
+#email,
 #phone {
     display: flex;
     padding: 5px;
@@ -115,13 +101,13 @@ span {
 #reason {
     display: flex;
     padding: 5px; 
-    padding-right: 380px;
+    padding-right: 386px;
 }
 
 #comment {
     display: flex;
     padding: 5px;
-    padding-right: 125px;
+    padding-right: 127px;
 }
 
 #submit {
@@ -140,7 +126,7 @@ span {
 
 @media (max-width: 768px) {
     .consultation-title-container {
-      padding: 80px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
   
@@ -155,16 +141,67 @@ span {
 
     .consultation-header-box {
         font-size: 22px;
+        width: 100%;
+        margin: 0;
         padding: 0;
     }
 
     .consultation-form-container {
-      flex-direction: column;
-      padding: 40px 20px;
-      text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .consultation-header-box {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        margin: 30px;
+       
     }
 
     .form-box {
-        padding: 20px 0;
+        
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
+
+    .info-section-1,
+    .info-section-2,
+    .info-section-3 {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .info {
+        width: 50%;
+    }
+
+    #firstname,
+    #lastname,
+    #email,
+    #phone {
+    display: flex;
+    padding: 5px;
+    padding-right: 20px;
+    }
+
+    #reason {
+        display: flex;
+        padding: 5px; 
+        padding-right: 236px;
+    }
+
+    #comment {
+        display: flex;
+        padding: 5px;
+    }
+
+    #submit {
+       position: relative;
+       bottom: 10px;
+    }
+    
 }

@@ -72,3 +72,42 @@ img{
     line-height: 1.6;
     padding-left: 30px; 
 }
+
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .policy-title-container {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .policy-title-box {
+      position: relative;
+      padding: 20px;
+    }
+  
+    .policy-title-box h2 {
+      font-size: 32px;
+      padding: 20px;
+    }
+
+    .privacy-container {
+        padding: 40px;
+        margin: 0;
+        width: 100%;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .privacy-service-box {
+        line-height: 1.6;
+        text-align: left; 
+
+        width: 100%;
+    }
+
+    .privacy-service-box h3 {
+        font-size: 34px;
+    }
+}

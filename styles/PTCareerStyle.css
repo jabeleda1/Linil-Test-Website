@@ -46,6 +46,7 @@ img{
     align-items: left;
     flex-direction: column;
 
+    max-width: 100%;
     margin: 100px;
     padding-left: 100px;
 }
@@ -90,9 +91,11 @@ img{
 }
 
 .description-box {
+    line-height: 1.4;
     text-align: left; 
     color: rgb(68, 68, 68);
 
+    width: 80%;
     margin-bottom: 20px;
 }
 
@@ -119,5 +122,45 @@ img{
 .additional-list {
     line-height: 1.6;
     list-style-type: none;
+}
+
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .careers-title-container {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .careers-title-box {
+      position: relative;
+      padding: 20px;
+    }
+  
+    .careers-title-box h2 {
+      font-size: 32px;
+      padding: 20px;
+    }
+
+    .position-container {
+        padding: 40px;
+        margin: 0;
+        width: 100%;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .description-box {
+        line-height: 1.6;
+        text-align: left; 
+
+        width: 100%;
+    }
+
+    .position-box h3,
+    .description-box h3{
+        font-size: 28px;
+    }
 }
 
