@@ -117,7 +117,8 @@ img{
 }
 
 .service-card {
-    width: 540px; /* increase size of cards */
+    max-width: 500px;
+    width: 100%; /* increase size of cards */
     background-color: rgb(231, 231, 231); /* inner card color */
     overflow: hidden;
     box-shadow: 0px, 2px, 4px rgba(0,0,0,0.2);
@@ -184,6 +185,18 @@ img{
 
 @media (max-width: 768px) {
 
+    .health-service-container {
+        padding: 30px 20px;
+      }
+
+    .health-service-box{
+        padding: 20px;
+    }
+
+    .health-service-box h2{
+        font-size: 26px;
+    }
+
     .other-service-box {
         display: flex;
         align-items: start;
@@ -205,46 +218,39 @@ img{
     }
 
     .service-navbar-container {
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 10px;
-    }
-
-    .service-nav {
         flex-direction: row;
         align-items: flex-start;
-        gap: 40px;
-        margin-top: 10px;
+        padding: 10px;
+      }
+  
+      .service-nav {
+          margin: 0;
+          padding: 0;
+        }
+      
+        .service-nav a {
+          padding: 0;
+        }
+
+        .service-card {
+            width: 100%;
+            margin: 20px auto;
+          }
         
-        position: relative;
-        right: 70px;
-      }
+        .service-card-container {
+            padding: 20px;
+        }
     
-      .service-nav a {
-        margin: 0;
-      }
-
-    .health-service-container {
-      padding: 80px 20px;
-      text-align: center;
-    }
-  
-    .health-service-box {
-      padding: 20px;
-    }
-  
-    .health-service-box h2 {
-      font-size: 28px;
-    }
-
-    .card {
-        width: 90%;
-        margin: 20px auto;
-      }
+        .service-card-content .scheduleButton {
+            position: relative;
+            right: 18px;
+        }
     
-      .card-container {
-        padding: 20px;
-    }
+        .service-card-content .scheduleButton {
+            position: relative;
+            right: 18px;
+    
+        }
 
     .service-card-content .scheduleButton {
         position: relative;

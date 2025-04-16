@@ -162,60 +162,83 @@ img{
 
 @media (max-width: 768px) {
     .health-service-container {
-      padding: 30px 20px;
-      text-align: center;
+        padding: 30px 20px;
+      }
+
+    .health-service-box{
+        padding: 20px;
     }
-  
-    .health-service-box {
-      padding: 20px;
-    }
-  
-    .health-service-box h2 {
-      font-size: 28px;
-      padding: 20px;
+
+    .health-service-box h2{
+        font-size: 26px;
     }
 
     .service-navbar-container {
         flex-direction: row;
+        align-items: flex-start;
         padding: 10px;
-        width: 100%;
       }
   
-      .service-nav {
-          flex-direction: row;
-          gap: 20px;
-          margin-top: 10px;
-          width: 60%;
-        }
-      
-        .service-nav a {
-          width: 100%;
-        }
-    
-        .ST-service-container {
-            padding: 40px;
-            margin: 0;
-            width: 100%;
-    
-            line-height: 1.6;
-        }
-
-        .overview-service-box {
-            margin: 0;
-        }
-
-        .how-service-box {
-            margin: 0;
-        }
-
-        .overview-service-box h2{
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        .ST-image {
-            position: static;
-            padding: 20px 0;
-        }
+    .service-nav {
+        margin: 0;
+        padding: 0;
     }
+      
+    .service-nav a {
+        padding: 0;
+    }
+    
+    .ST-service-container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .overview-service-box,
+    .consultation-service-box {
+        margin: 0;
+        padding-top: 30px;
+    }
+        
+    .overview-service-box h2,
+    .consultation-service-box h2 {
+        text-align: left;
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .overview-service-box p,
+    .consultation-service-box p {
+        font-size: 14px;
+    }
+
+    .how-service-box {
+        margin: auto;
+    }
+
+    .how-service-box h3{
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .how-service-box h4{
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .how-service-box li{
+        font-size: 15px;
+    }
+
+    .consultation-service-box button {
+        font-size: 14px;
+    }
+
+    .ST-image {
+        position: static;
+        padding: 20px 0;
+    }
+}
 
