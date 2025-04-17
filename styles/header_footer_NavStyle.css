@@ -236,7 +236,6 @@
     .footer-contact-box,
     .footer-quicklinks-box,
     .footer-policylinks-box {
-      font-size: 16px;
       position: static;
       border-left: none;
       padding-left: 0;
@@ -249,6 +248,32 @@
     .copyright-box {
       font-size: 13px;
       text-align: center;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 991px) {
+    .contact {
+      font-size: 13px;
+      width: 100%;
+      padding: 20px 0;
+    }
+    
+    .footer-title-box,
+    .footer-contact-box,
+    .footer-quicklinks-box,
+    .footer-policylinks-box {
+      position: relative;
+      bottom: 70px;
+      right: 50px;
+
+      width: 100%;
+      font-size: 16px;
+      border-left: none;
+      padding: 0;
+    }
+    
+    .footer-title-box h2 {
+      font-size: 40px;
     }
   }
   

@@ -232,3 +232,83 @@ img{
         width: 80%;
     }
 }
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .about-container {
+        padding: 30px 20px;
+        text-align: center;
+      }
+    
+      .about-box {
+        padding: 20px;
+      }
+    
+      .about-box h2 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .history-container,
+      .mission-container,
+      .employee-container {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+    
+      .history-box,
+      .mission-box,
+      .employee-box {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      }
+  
+      .history-box h2,
+      .mission-box h2,
+      .employee-box h2,
+      .values-box h2 {
+        line-height: 1.2;
+        font-size: 35px;
+      }
+  
+      .history-box p,
+      .mission-box p,
+      .employee-box p {
+        font-size: 16px;
+        width: 100%;
+      }
+    
+      .history-image,
+      .employee-image {
+        position: static;
+        padding: 20px 0;
+      }
+
+      .values-container {
+        padding-bottom: 10%;
+      }
+
+      .values-container h2{
+        padding: 5%;
+      }
+  
+      .values-box {
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+          
+      }
+  
+      .values-section {
+          line-height: 1.4;
+          width: 70%;
+          
+          margin: 0;
+          padding-left: 10%;
+        }
+
+        .values-section h3 {
+          margin-top: 20px;
+        }
+}

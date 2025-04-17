@@ -307,7 +307,7 @@ img{
     color: rgb(186, 66, 69);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .home-container {
       padding: 30px 20px;
       text-align: center;
@@ -317,26 +317,36 @@ img{
       padding: 20px;
       width: 100%;
     }
-
-    .home-box-section p {
-        font-size: 13px;
-      }
-
-    .home-box {
-        width: 100%; 
+  
+    .home-box-section p,
+    .career-box p,
+    .CHAP-box p,
+    .location-box p {
+      font-size: 13px;
+      width: 100%;
+      padding-right: 20px;
     }
   
-    .home-box-section h2 {
+    .home-box {
+      width: 100%;
+    }
+  
+    .home-box-section h2,
+    .CHAP-box h2,
+    .career-box h2,
+    .location-box h2 {
       font-size: 28px;
-      padding: 20px;
+      line-height: 1.2;
+      padding-right: 20px;
     }
-
+  
     .home-box-section button,
-    .career-box button {
-        font-size: 14px;
-        padding: 12px 20px;
+    .career-box button,
+    .schedule-box button {
+      font-size: 14px;
+      padding: 12px 20px;
     }
-
+  
     .schedule-container,
     .CHAP-container,
     .location-container,
@@ -345,20 +355,13 @@ img{
       padding: 40px 20px;
       text-align: center;
     }
-
-    .schedule-container h2{
-        padding: 0;
-        padding-right: 30px;
-        margin: 0;
-        line-height: 1.4;
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .schedule-box button {
-        width: 100%;
-        font-size: 14px;
-        padding: 6px 34px;
+  
+    .schedule-container h2 {
+      padding: 0 30px 0 0;
+      margin: 0;
+      line-height: 1.4;
+      width: 100%;
+      font-size: 14px;
     }
   
     .CHAP-box,
@@ -367,41 +370,16 @@ img{
       padding: 0;
       width: 100%;
     }
-
-    .CHAP-box h2,
-    .career-box h2 {
-        line-height: 1.2;
-        font-size: 28px;
-    }
-
-    .career-box p {
-        width: 100%;
-        font-size: 13px;
-    }
-
-    .location-box h2 {
-        padding-right: 20px;
-        line-height: 1.2;
-        font-size: 28px;
-    }
-
-    .CHAP-box p,
-    .location-box p {
-        padding-right: 20px;
-        width: 100%;
-        font-size: 13px;
-    }
-
-    .CHAP-image {
-        position: static;
-        padding: 20px 0;  
-        width: 50%;
-    }
   
+    .CHAP-image,
     .career-image,
     .location-image {
       position: static;
       padding: 20px 0;
+    }
+  
+    .CHAP-image {
+      width: 50%;
     }
   
     .card {
@@ -412,9 +390,36 @@ img{
     .card-container {
       padding: 20px;
     }
-
+  
     .card-content a {
-        position: relative;
-        right: 38px;
+      position: relative;
+      right: 38px;
     }
+  }
+
+  @media (min-width: 601px) and (max-width: 992px) {
+    .CHAP-box,
+    .location-box,
+    .career-box {
+        margin: auto;
+    }
+
+    .schedule-box button {
+        padding: 5px 26px;
+    }
+
+    .CHAP-box p,
+    .location-box p {
+        font-size: 14px;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 20px;
+       
+    }
+
+    .CHAP-image {
+        width: 30%;
+        margin: auto;
+        padding: 0;
+      }
   }

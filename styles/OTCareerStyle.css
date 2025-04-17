@@ -167,3 +167,44 @@ img{
     }
 }
 
+@media (min-width: 601px) and (max-width: 992px) {
+    .careers-title-container {
+        padding: 30px 20px;
+        text-align: center;
+      }
+    
+      .careers-title-box {
+        padding: 20px;
+      }
+    
+      .careers-title-box h2 {
+        font-size: 32px;
+      }
+  
+      .position-container {
+          padding: 40px;
+          margin: 0;
+          width: 100%;
+  
+          font-size: 14px;
+          line-height: 1.6;
+      }
+  
+      .position-box h3,
+      .position-box li {
+          font-size: 16px;
+      }
+  
+      .description-box {
+          line-height: 1.6;
+          text-align: left; 
+  
+          width: 100%;
+      }
+  
+      .position-box h3,
+      .description-box h3{
+          font-size: 26px;
+      }
+}
+

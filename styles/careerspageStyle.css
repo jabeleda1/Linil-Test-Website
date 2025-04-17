@@ -192,5 +192,82 @@ img{
         padding: 10px;
         margin: 0;
     }
-    
 }
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .careers-title-container {
+        padding: 30px 20px;
+        text-align: center;
+      }
+    
+      .careers-title-box {
+        padding: 20px;
+      }
+    
+      .careers-title-box h2 {
+        font-size: 28px;
+      }
+  
+      .careers-box {
+        text-align: center;
+        padding-bottom: 40px;
+        margin: 0;
+        width: 100%;
+      }
+  
+      .careers-box h2 {
+        flex-direction: row;
+        
+  
+        line-height: 1.4;
+        font-size: 30px;
+  
+        margin: 0;
+        padding: 1;
+        width: 100%;
+      }
+  
+      .careers-box p {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          width: 100%;
+          line-height: 1.6;
+        }
+    
+      .careers-container,
+      .service-navbar-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: left;
+      }
+  
+      .service-navbar-container {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          
+      }
+  
+      .service-navbar-container h4 {
+        width: 100%;
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+  
+    .service-nav {
+        width: 70%;
+        margin: auto;
+        
+      }
+  
+    .service-nav a {
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid hsla(0, 0%, 13%, 0.11);
+        padding: 10px;
+        margin: 0;
+    }
+  }

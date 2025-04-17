@@ -249,3 +249,55 @@ img{
 
     }
 }
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .health-service-container {
+        padding: 30px 20px;
+      }
+
+    .health-service-box{
+        padding: 20px;
+    }
+
+    .health-service-box h2{
+        font-size: 26px;
+    }
+
+    .nurse-service-box {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nurse-service-box h2 {
+        text-align: left;
+        font-size: 40px;
+        line-height: 1.2;
+        padding-bottom: 16px;
+    }
+
+    .nurse-service-box p {
+        font-size: 14px;
+    }
+
+    .service-navbar-container {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 10px;
+    }
+
+    .service-nav {
+        margin: 0;
+        padding: 0;
+      }
+    
+      .service-nav a {
+        padding: 0;
+      }
+
+    .service-card {
+        width: 100%;
+        margin: 20px auto;
+        background-color: rgb(231, 231, 231);
+      }
+}

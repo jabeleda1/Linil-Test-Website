@@ -46,8 +46,7 @@ img{
     align-items: left;
     flex-direction: column;
 
-    margin: 100px;
-    padding-left: 100px;
+    width: 100%;
 }
 
 .patient-rights-service-box {
@@ -55,7 +54,10 @@ img{
     line-height: 1.6;
     color: rgb(68, 68, 68);
 
-    margin-bottom: 20px;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 60%;
 }
 
 .patient-rights-service-box h3 {
@@ -67,6 +69,11 @@ img{
     font-size: 20px;
 }
 
+.patient-rights-service-box li {
+    list-style: circle;
+    margin-left: 30px;
+}
+
 /* --------------------------------------------- */
 
 .agencies-container {
@@ -74,13 +81,14 @@ img{
     align-items: left;
     flex-direction: column;
 
-    border-top: 1px solid black;
-    padding-top: 40px;
+    width: 100%;
 }
 
 .agencies-box {
     text-align: left; 
     line-height: 1.6;
+
+    width: 60%;
 }
 
 .agencies-box h4{
@@ -100,7 +108,6 @@ img{
     }
   
     .policy-title-box {
-      position: relative;
       padding: 20px;
     }
   
@@ -130,24 +137,31 @@ img{
         line-height: 1.2;
     }
 
-    .agencies-container {
-        padding: 40px;
-        margin: 0;
+    .patient-rights-service-box h2 {
+        padding-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .agencies-container { 
         width: 100%;
 
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.4;
+        outline: auto;
     }
 
     .agencies-box {
+        font-size: 14px;
         line-height: 1.4;
         text-align: left; 
 
         width: 100%;
+        padding: 0;
+        outline: auto;
     }
 
     .agencies-box h4 {
-        font-size: 22px;
+        font-size: 20px;
         text-align: left; 
     }
 }

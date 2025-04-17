@@ -268,5 +268,136 @@ span {
        position: relative;
        bottom: 10px;
     }
+}
 
+@media (min-width: 601px) and (max-width: 991px) {
+    .contact-title-container {
+        padding: 30px 20px;
+        text-align: center;
+      }
+    
+      .contact-title-box {
+        padding: 20px;
+      }
+    
+      .contact-title-box h2 {
+        font-size: 28px;
+  
+      }
+  
+      .contact-form-container {
+          width: 100%;
+          flex-direction: column;
+          padding: 0;
+      }
+  
+      .content-container {
+          width: 100%;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+  
+          border-bottom: 1px solid rgb(73, 73, 73);
+      }
+  
+      .content-container li {
+          line-height: 1.4;
+         font-size: 14px;
+         font-weight: bold;
+      }
+  
+      .contact-header {
+          width: 100%;
+          padding-top: 40px;
+          text-align: center;
+      }
+  
+      .contact-header h2{
+          font-size: 36px;
+      }
+  
+      .contact-header p{
+          margin: auto;
+          padding: 1;
+          width: 70%;
+          font-size: 12px;
+      }
+
+      .form-container {
+        margin: 0;
+        padding-right: 0;
+    }
+    
+    .form-container {
+        margin: 0;
+        padding-right: 0;
+    }
+    
+    .contact-header {
+        color: rgb(158, 67, 69);
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .contact-header h2 {
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .contact-header p{
+        color: rgb(73, 73, 73);
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    
+    /* ----------------------------------------------------------------------- */
+    
+    .form-box {
+        margin: auto;
+        padding-left: 21%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .info {
+        padding: 10px;
+    }
+    
+    .info-section-1 {
+        display: flex;
+    }
+    
+    .info-section-2 {
+        justify-content: center;
+    }
+    
+    .submit-button {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    #firstname,
+    #lastname {
+        padding: 5px;
+        padding-right: 50px;
+    }
+    
+    #email,
+    #phone {
+        padding: 5px;
+        padding-right: 280px;
+    }
+    
+    #comment {
+        padding: 5px;
+        padding-right: 25px;
+    }
+    
+    #submit {
+        position: relative;
+        right: 90px;
+        font-size: 16px;
+        padding: 10px 25px;
+    }
 }

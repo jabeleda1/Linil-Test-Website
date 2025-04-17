@@ -201,5 +201,79 @@ span {
        position: relative;
        bottom: 10px;
     }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .consultation-title-container {
+        padding: 30px 20px;
+        text-align: center;
+      }
     
+      .consultation-title-box {
+        padding: 20px;
+      }
+    
+      .consultation-title-box h2 {
+        font-size: 24px;
+      }
+  
+      .consultation-header-box {
+          font-size: 22px;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+      }
+  
+      .consultation-form-container {
+          width: 100%;
+          margin: 0;
+          padding: 0; 
+      }
+  
+      .consultation-header-box {
+          text-align: center;
+          width: 70%;
+          font-size: 24px;
+          margin: 40px;
+      }
+  
+      .info-section-1,
+      .info-section-2,
+      .info-section-3 {
+          width: 100%;
+          padding: 0;
+          margin: auto;
+      }
+  
+      .info {
+          font-size: 14px;
+          width: 50%;
+      }
+  
+      #firstname,
+      #lastname,
+      #email,
+      #phone {
+        display: flex;
+        padding: 5px;
+        padding-right: 100px;
+      }
+  
+      #reason {
+        display: flex;
+        padding: 5px; 
+        padding-right: 386px;
+      }
+  
+      #comment {
+        display: flex;
+        padding: 5px;
+        padding-right: 127px; 
+      }
+  
+      #submit {
+        font-size: 12px;
+        position: relative;
+        bottom: 10px;
+      }
 }

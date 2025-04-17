@@ -46,8 +46,7 @@ img{
     align-items: left;
     flex-direction: column;
 
-    margin: 100px;
-    padding-left: 100px;
+    width: 100%;
 }
 
 .privacy-box {
@@ -55,7 +54,14 @@ img{
     line-height: 1.6;
     color: rgb(68, 68, 68);
 
-    margin-bottom: 20px;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 60%;
+}
+
+.privacy-box h2 {
+    font-size: 25px;
 }
 
 .privacy-box h3 {
@@ -70,7 +76,6 @@ img{
 
 .privacy-list {
     line-height: 1.6;
-    padding-left: 30px; 
 }
 
 /* --------------------------------------- */
@@ -82,7 +87,6 @@ img{
     }
   
     .policy-title-box {
-      position: relative;
       padding: 20px;
     }
   
@@ -100,7 +104,7 @@ img{
         line-height: 1.6;
     }
 
-    .privacy-box h4 {
+    .privacy-box {
         font-size: 20px;
         line-height: 1.2;
         text-align: left; 

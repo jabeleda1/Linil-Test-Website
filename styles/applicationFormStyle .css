@@ -188,3 +188,69 @@ span {
         bottom: 14px;
      }
 }
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .application-title-container {
+        padding: 30px 20px;
+        text-align: center;
+      }
+    
+      .application-title-box {
+        padding: 20px;
+      }
+    
+      .application-title-box h2 {
+        font-size: 28px;
+        padding: 20px;
+      }
+  
+      .application-header-box {
+          text-align: center;
+          font-size: 22px;
+          width: 100%;
+          margin: 0;
+          padding: 40px 40px;
+          
+      }
+  
+      .application-form-container {
+          width: 100%;
+          margin: 0;
+          padding: 0; 
+      }
+  
+      .form-box {
+        margin: 0;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+    
+    #firstname,
+    #lastname,
+    #email,
+    #phone {
+        display: flex;
+        padding: 5px;
+        padding-right: 100px;
+    }
+    
+    #position {
+        display: flex;
+        padding: 5px;
+        padding-right: 400px;
+    }
+    
+    #file {
+        display: flex;
+        padding: 5px;
+        padding-right: 400px;
+    }
+    
+    #submit {
+        position: relative;
+        right: 50px;
+        bottom: 10px;
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
