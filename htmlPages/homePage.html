@@ -58,7 +58,7 @@
                 <div class="slider" id="slider">
                   <div class="slide">
                     <img src="/Images/Official/slide-image-1.jpg" alt="Slide 1" loading="lazy" />
-                    <div class="caption-container">
+                    <div class="caption-container" id="caption-slide-1">
                         <div class="caption-box">
                             <h2>Linil: Home Care from the Heart</h2>
                             <p>Linil Visiting Nurses, Inc. is a Medicare-Certified and CHAP-Accredited Home Health Agency
@@ -74,22 +74,26 @@
               
                   <div class="slide">
                     <img src="/Images/Official/slide-image-2.jpg" alt="Slide 2" loading="lazy" />
-                    <div class="caption-container">
+                    <div class="caption-container" id="caption-slide-2">
                         <div class="caption-box">
-                            <h2>Skilled Nursing Services</h2>
-                            <p>Expert care in the comfort of your home.</p>
-                            <a href="#services" class="caption-btn">Our Services</a>
+                            <h2>Our Health Services</h2>
+                            <p>We here at Linil Visting Nurses, Inc. provide a wide range of quality services to help those in
+                               need of dependable healthcare. From Therapy-to-Nursing, these services we bring are delivered
+                               with the utmost kindess and care to meet your home care needs.</p>
+                            <a href="healthservicePage.html" class="caption-btn">Learn More</a>
                         </div>
                     </div>
                   </div>
               
                   <div class="slide">
                     <img src="/Images/Official/slide-image-3.jpg" alt="Slide 3" loading="lazy" />
-                    <div class="caption-container">
+                    <div class="caption-container" id="caption-slide-3">
                         <div class="caption-box">
                             <h2>Join Our Team</h2>
-                            <p>We're hiring caring professionals like you.</p>
-                            <a href="#careers" class="caption-btn">Careers</a>
+                            <p>At Linil Visiting Nurses, we are a dedicated group of professionals devoted to providing patients
+                               with the highest quality of home healthcare services. If you have the passion and talent for helping
+                               those in need, advance your carrer now and join our team. </p>
+                            <a href="careersPage.html" class="caption-btn">See Careers</a>
                         </div>
                     </div>
                   </div>
@@ -100,20 +104,8 @@
 
                 <div class="slider-dots" id="slider-dots"></div>
             </div>
-
-            <!-- <div class ="home-box-section">
-                <h2>Linil: Home Care from the Heart</h2>
-                <p>Linil Visiting Nurses, Inc. is a Medicare-Certified and CHAP-Accredited Home Health Agency serving the
-                    Greater Central Florida area.  We help people recover from illness, injury, surgery, hospitalization,
-                    and manage chronic conditions so that you stay safe and independent in your own home.
-                </p> -->
-                
-                <!-- <a href="aboutPage.html" target=_self title="Go to About Page">
-                    <button>Learn More</button>
-                </a> -->
-            </div>
         </div>
-    </section>
+</section>
 
     <div class="schedule-container">
         <div class="schedule-box">
@@ -274,65 +266,65 @@
 </footer>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let currentIndex = 0;
-      const slides = document.querySelectorAll(".slide");
+    document.addEventListener("DOMContentLoaded", () => {
       const slider = document.getElementById("slider");
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.querySelector(".slider-btn.prev");
+      const nextBtn = document.querySelector(".slider-btn.next");
       const dotsContainer = document.getElementById("slider-dots");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      let dots = [];
-      let autoSlideInterval;
+      let currentIndex = 0;
   
-      // Create dot indicators
-      slides.forEach((_, index) => {
+      // Dynamically create dot indicators
+      slides.forEach((_, i) => {
         const dot = document.createElement("span");
         dot.classList.add("dot");
-        if (index === 0) dot.classList.add("active");
-        dot.addEventListener("click", () => showSlide(index));
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          goToSlide(i);
+        });
         dotsContainer.appendChild(dot);
-        dots.push(dot);
       });
   
-      function updateDots(index) {
-        dots.forEach(dot => dot.classList.remove("active"));
-        if (dots[index]) dots[index].classList.add("active");
+      const dots = document.querySelectorAll(".dot");
+  
+      function updateSliderPosition() {
+        const slideWidth = window.innerWidth;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        updateActiveDot();
       }
   
-      function showSlide(index) {
-        if (index < 0) index = slides.length - 1;
-        if (index >= slides.length) index = 0;
+      function goToSlide(index) {
         currentIndex = index;
-        slider.style.transform = `translateX(-${index * 100}%)`;
-        updateDots(index);
+        updateSliderPosition();
+      }
+  
+      function updateActiveDot() {
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[currentIndex].classList.add("active");
       }
   
       function nextSlide() {
-        showSlide(currentIndex + 1);
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSliderPosition();
       }
   
       function prevSlide() {
-        showSlide(currentIndex - 1);
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSliderPosition();
       }
   
-      // Auto Slide Controls
-      function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 10000); // 10 seconds
-      }
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
   
-      function pauseAutoSlide() {
-        clearInterval(autoSlideInterval);
-      }
+      // Resize behavior
+      window.addEventListener("resize", updateSliderPosition);
   
-      // Set up arrow button listeners
-      document.querySelector(".slider-btn.next").addEventListener("click", nextSlide);
-      document.querySelector(".slider-btn.prev").addEventListener("click", prevSlide);
+      // Optional: Auto-slide every X seconds (pause on hover)
+      let autoSlideInterval = setInterval(nextSlide, 5000);
+      slider.addEventListener("mouseenter", () => clearInterval(autoSlideInterval));
+      slider.addEventListener("mouseleave", () => autoSlideInterval = setInterval(nextSlide, 5000));
   
-      // Pause on hover, resume on mouse leave
-      sliderWrapper.addEventListener("mouseenter", pauseAutoSlide);
-      sliderWrapper.addEventListener("mouseleave", startAutoSlide);
-  
-      // Start the slider
-      startAutoSlide();
+      updateSliderPosition(); // Initial call
     });
   </script>
   
