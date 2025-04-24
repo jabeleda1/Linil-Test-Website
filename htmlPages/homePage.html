@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 <header>
         <div class="flex-container"> <!--Navigation Bar-->
             <div class="contact">Phone: (407)-790-4848</div>
@@ -55,16 +54,63 @@
     <!--Section 1-->
     <section class="home-container"> 
         <div class ="home-box">
-            <div class ="home-box-section">
+            <div class="slider-wrapper">
+                <div class="slider" id="slider">
+                  <div class="slide">
+                    <img src="/Images/Official/slide-image-1.jpg" alt="Slide 1" loading="lazy" />
+                    <div class="caption-container">
+                        <div class="caption-box">
+                            <h2>Linil: Home Care from the Heart</h2>
+                            <p>Linil Visiting Nurses, Inc. is a Medicare-Certified and CHAP-Accredited Home Health Agency
+                                serving the Greater Central Florida area. We help people recover from illness, injury,
+                                surgery, hospitalization and manage chronic conditions so that you can stay safe and
+                                independent in your own home.
+                            </p>
+                            <a href="aboutPage.html" class="caption-btn">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+                  
+              
+                  <div class="slide">
+                    <img src="/Images/Official/slide-image-2.jpg" alt="Slide 2" loading="lazy" />
+                    <div class="caption-container">
+                        <div class="caption-box">
+                            <h2>Skilled Nursing Services</h2>
+                            <p>Expert care in the comfort of your home.</p>
+                            <a href="#services" class="caption-btn">Our Services</a>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="slide">
+                    <img src="/Images/Official/slide-image-3.jpg" alt="Slide 3" loading="lazy" />
+                    <div class="caption-container">
+                        <div class="caption-box">
+                            <h2>Join Our Team</h2>
+                            <p>We're hiring caring professionals like you.</p>
+                            <a href="#careers" class="caption-btn">Careers</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+
+                <div class="slider-dots" id="slider-dots"></div>
+            </div>
+
+            <!-- <div class ="home-box-section">
                 <h2>Linil: Home Care from the Heart</h2>
                 <p>Linil Visiting Nurses, Inc. is a Medicare-Certified and CHAP-Accredited Home Health Agency serving the
                     Greater Central Florida area.  We help people recover from illness, injury, surgery, hospitalization,
                     and manage chronic conditions so that you stay safe and independent in your own home.
-                </p>
+                </p> -->
                 
-                <a href="aboutPage.html" target=_self title="Go to About Page">
+                <!-- <a href="aboutPage.html" target=_self title="Go to About Page">
                     <button>Learn More</button>
-                </a>
+                </a> -->
             </div>
         </div>
     </section>
@@ -227,6 +273,70 @@
     
 </footer>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const slider = document.getElementById("slider");
+      const dotsContainer = document.getElementById("slider-dots");
+      const sliderWrapper = document.querySelector(".slider-wrapper");
+      let dots = [];
+      let autoSlideInterval;
+  
+      // Create dot indicators
+      slides.forEach((_, index) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => showSlide(index));
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+      });
+  
+      function updateDots(index) {
+        dots.forEach(dot => dot.classList.remove("active"));
+        if (dots[index]) dots[index].classList.add("active");
+      }
+  
+      function showSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        currentIndex = index;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        updateDots(index);
+      }
+  
+      function nextSlide() {
+        showSlide(currentIndex + 1);
+      }
+  
+      function prevSlide() {
+        showSlide(currentIndex - 1);
+      }
+  
+      // Auto Slide Controls
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 10000); // 10 seconds
+      }
+  
+      function pauseAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+  
+      // Set up arrow button listeners
+      document.querySelector(".slider-btn.next").addEventListener("click", nextSlide);
+      document.querySelector(".slider-btn.prev").addEventListener("click", prevSlide);
+  
+      // Pause on hover, resume on mouse leave
+      sliderWrapper.addEventListener("mouseenter", pauseAutoSlide);
+      sliderWrapper.addEventListener("mouseleave", startAutoSlide);
+  
+      // Start the slider
+      startAutoSlide();
+    });
+  </script>
+  
+  
 </body>
 
 
