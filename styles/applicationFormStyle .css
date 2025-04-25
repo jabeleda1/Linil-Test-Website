@@ -15,10 +15,6 @@ img{
     display: block;
 }
 
-span {
-    color: rgb(158, 67, 69);
-}
-
 .application-title-container {
     background-image: url(/Images/Official/consultation-image.png);
     background-repeat: no-repeat;
@@ -67,6 +63,10 @@ span {
 
 .info {
     padding: 10px;
+}
+
+.info span {
+    color: rgb(158, 67, 69);
 }
 
 .info-section-1 {

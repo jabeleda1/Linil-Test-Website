@@ -15,10 +15,6 @@ img{
     display: block;
 }
 
-span {
-    color: rgb(158, 67, 69);
-}
-
 .consultation-title-container {
     background-image: url(/Images/Official/consultation-image.png);
     background-repeat: no-repeat;
@@ -62,12 +58,20 @@ span {
     width: 40%;
 }
 
+.consultation-header-box span {
+    color: rgb(182, 60, 60);
+}
+
 .form-box {
     align-items: center;
 }
 
 .info {
     padding: 10px;
+}
+
+.info span {
+    color: rgb(187, 23, 23);
 }
 
 .info-section-1 {

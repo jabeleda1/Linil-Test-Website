@@ -51,6 +51,14 @@ img{
     color: rgb(186, 66, 69);
 }
 
+.service-nav span {
+    color: hsla(0, 0%, 0%, 0.514);
+    position: relative;
+    left: 10px;
+}
+
+/* ---------------------------------------------------------- */
+
 .health-service-container {
     background-image: url(/Images/Official/header-health-service-image.png);
     background-repeat: no-repeat;

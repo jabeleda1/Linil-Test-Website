@@ -20,6 +20,7 @@
         </div>
 
         <div class="header-container">
+            <button class="hamburger" id="hamburger">&#9776;</button> <!-- ☰ -->
             <div class="logo">
                 <a href="/htmlPages/homePage.html" target=_self title="Go to Home Page">
                     <img src="/TEMP/Linil Logo.png" alt="Linil Logo" title="Home Page Logo"> 
@@ -40,15 +41,30 @@
         </div>
 
         <nav class="navbar-container">
-            <ul class="nav">
-                <li><a href="/htmlPages/homePage.html">Home</a></li>
-                <li><a href="/htmlPages/aboutPage.html">About Linil</a></li>
-                <li><a href="/htmlPages/healthservicePage.html">Health Services</a></li> 
-                <li><a href="/htmlPages/careersPage.html">Careers</a></li>
-                <li><a href="/htmlPages/consultationPage.html">Schedule Consultation</a></li>
-                <li><a href="/htmlPages/contactPage.html">Contact Us</a></li>
+            <ul class="nav" id="nav-menu">
+              <li><a href="/htmlPages/homePage.html">Home</a></li>
+              <li><a href="/htmlPages/aboutPage.html">About Linil</a></li>
+              <li><a href="/htmlPages/careersPage.html">Careers</a></li>
+              
+              <li class="dropdown">
+                <a href="/htmlPages/healthservicePage.html">Health Services <span class="dropdown-toggle">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/htmlPages/therapyservicePage.html">Therapy Services</a></li>
+                    <li><a href="/htmlPages/nursingservicePage.html">Nursing Services</a></li>
+                    <li><a href="/htmlPages/otherservicePage.html">Medical Social Services</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown">
+                <a href="/htmlPages/contactPage.html">Contact <span class="dropdown-toggle">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/htmlPages/contactPage.html">Contact Us</a></li>
+                  <li><a href="/htmlPages/consultationPage.html">Schedule Consultation</a></li>
+                </ul>
+              </li>
             </ul>
-        </nav>
+          </nav>
+
 </header>
 
 <main>
@@ -61,9 +77,9 @@
 
     <nav class="service-navbar-container">
         <ul class="service-nav">
-            <li><a href="/htmlPages/homePage.html">Home Page</a></li>
-            <li><a href="/htmlPages/healthservicePage.html">Health Services</a></li>
-            <li><a href="/htmlPages/therapyservicePage.html">Therapy Services</a></li>
+            <li><a href="/htmlPages/homePage.html">Home Page</a></li> <span>/</span>
+            <li><a href="/htmlPages/healthservicePage.html">Health Services</a></li> <span>/</span>
+            <li><a href="/htmlPages/therapyservicePage.html">Therapy Services</a></li> <span>/</span>
             <li><a href="/htmlServices/OTservicePage.html">Occupational Therapy</a></li>
         </ul>
     </nav>
@@ -143,7 +159,7 @@
             <div class="footer-policylinks-box">
                 <h3>Policies</h3>
                 <ul class="policylinks">
-                    <li><a href="/htmlPolicies/termsServicePage.html">Terms of Use</a></li>
+                    <li><a href="/htmlPolicies/billingServicesPage.html">Billing Services</a></li>
                     <li><a href="/htmlPolicies/privacyPolicyPage.html">Privacy Policy</a></li>
                     <li><a href="/htmlPolicies/rightsResponsibilitiesPage.html">Patient Rights and Responsibilities</a></li>
                 </ul>
@@ -156,6 +172,39 @@
     
 </footer>
 
+<!-- Functionality for Navigation Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdown = document.querySelector(".dropdown");
+  
+      if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      }
+  
+      if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          dropdown.classList.toggle("active");
+        });
+      }
+  
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+          navMenu.classList.remove("show");
+          dropdown.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
 </body>
+</html>
+
+
 
 

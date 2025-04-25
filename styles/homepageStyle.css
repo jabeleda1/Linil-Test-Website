@@ -15,14 +15,6 @@ img{
     display: block;
 }
 
-/* .home-container {
-    padding: 150px 454px;
-    background-image: url(/Images/Official/HomePage-Image-Slide.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;  
-} */
-
 /* Image Slider */
 .slider-wrapper {
   position: relative;
@@ -119,6 +111,21 @@ img{
   background-color: rgb(88, 88, 88);
 }
 
+#caption-slide-1 {
+  position: absolute;
+  left: 0%;
+}
+
+#caption-slide-2 {
+  position: absolute;
+  left: 100%;
+}
+
+#caption-slide-3 {
+  position: absolute;
+  left: 200%;
+}
+
 /* Slider Dots */
 .slider-dots {
   display: flex;
@@ -143,64 +150,7 @@ img{
   background-color: #ffffffce;
 }
 
-#caption-slide-1 {
-  position: absolute;
-  left: 0%;
-}
-
-#caption-slide-2 {
-  position: absolute;
-  left: 100%;
-}
-
-#caption-slide-3 {
-  position: absolute;
-  left: 200%;
-}
-
-/* .home-box-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    color: white;
-    padding: 30px 100px;
-}
-
-.home-box-section h2 {
-    font-size: 36px;
-    font-weight: bold;
-    padding: 40px;
-}
-
-.home-box-section p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 2;
-    padding-bottom: 40px;
-}
-
-.home-box-section button {
-    font-size: 16px;
-    font-style: bold;
-
-    background-color: rgb(186, 66, 69);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 20px 40px;
-    border: none;
-    cursor: pointer;
-}
-
-.home-box-section button:hover {
-    background-color: rgb(88, 88, 88);
-} */
-
-/* .home-box {
-    position: relative;
-    bottom: -20px;
-} */
+/* ----------------------------------- */
 
 .schedule-container {
     display: flex;

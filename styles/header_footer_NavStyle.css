@@ -88,26 +88,74 @@
   }
   
   .nav {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    background-color: white;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+  }
+
+  .nav li {
+    position: relative;
+    top: 15%;
   }
   
   .nav a {
-    color: hsl(0, 0%, 37%);
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 15px;
+    color: rgb(87, 87, 87);
     font-weight: bold;
+    padding: 8px 12px;
   }
   
   .nav a:hover {
     color: rgb(186, 66, 69);
   }
+
+  /* Hamburger styles */
+.hamburger {
+  color: rgb(63, 63, 63);
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+  /* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 1000;
+  min-width: 160px;
+}
+
+.dropdown-menu li {
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
+.dropdown-menu li a {
+  color: rgb(87, 87, 87);
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+/* Shows dropdown menu when hovering */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
   
   /* Search Bar */
   .searchBar {
@@ -184,6 +232,31 @@
   
   /* RESPONSIVE: Tablets and Mobile */
   @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .nav.show {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav li {
+      padding: 10px 0;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      padding-left: 15px;
+    }
+
     .flex-container,
     .navbar-container,
     .footer-container {
@@ -252,6 +325,30 @@
   }
 
   @media (min-width: 601px) and (max-width: 991px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .nav.show {
+      display: flex;
+    }
+  
+    .nav li {
+      padding: 10px 0;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      padding-left: 15px;
+    }
+
     .contact {
       font-size: 13px;
       width: 100%;

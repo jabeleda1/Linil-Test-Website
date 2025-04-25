@@ -20,7 +20,7 @@
         </div>
 
         <div class="header-container">
-
+            <button class="hamburger" id="hamburger">&#9776;</button> <!-- ☰ -->
             <div class="logo">
                 <a href="homePage.html" target=_self title="Go to Home Page">
                     <img src="/TEMP/Linil Logo.png" alt="Linil Logo" title="Home Page Logo"> 
@@ -41,13 +41,27 @@
         </div>
 
         <nav class="navbar-container">
-            <ul class="nav">
-                <li><a href="homePage.html">Home</a></li>
-                <li><a href="aboutPage.html">About Linil</a></li>
-                <li><a href="healthservicePage.html">Health Services</a></li> 
-                <li><a href="careersPage.html">Careers</a></li>
-                <li><a href="consultationPage.html">Schedule Consultation</a></li>
-                <li><a href="contactPage.html">Contact Us</a></li>
+            <ul class="nav" id="nav-menu">
+              <li><a href="homePage.html">Home</a></li>
+              <li><a href="aboutPage.html">About Linil</a></li>
+              <li><a href="careersPage.html">Careers</a></li>
+              
+              <li class="dropdown">
+                <a href="healthservicePage.html">Health Services <span class="dropdown-toggle">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="therapyservicePage.html">Therapy Services</a></li>
+                    <li><a href="nursingservicePage.html">Nursing Services</a></li>
+                    <li><a href="otherservicePage.html">Medical Social Services</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown">
+                <a href="contactPage.html">Contact <span class="dropdown-toggle">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="contactPage.html">Contact Us</a></li>
+                  <li><a href="consultationPage.html">Schedule Consultation</a></li>
+                </ul>
+              </li>
             </ul>
         </nav>
 </header>
@@ -62,17 +76,17 @@
 
     <nav class="service-navbar-container">
         <ul class="service-nav">
-            <li><a href="healthservicePage.html">Health Services</a></li>
-            <li><a href="therapyservicePage.html">Therapy Services</a></li>
-            <li><a href="nursingservicePage.html">Nursing Services</a></li>
-            <li><a href="otherservicePage.html">Other Services</a></li>
+            <li><a href="healthservicePage.html">Health Services</a></li> <span>/</span>
+            <li><a href="therapyservicePage.html">Therapy Services</a></li> <span>/</span>
+            <li><a href="nursingservicePage.html">Nursing Services</a></li> <span>/</span>
+            <li><a href="otherservicePage.html">Medical Social Services</a></li>
         </ul>
     </nav>
 
      <!--Other Service Header-->   
         <div class="other-service-container"> 
             <div class="other-service-box">
-                <h2>Other <span>Services</span></h2>
+                <h2>Medical Social <span>Services</span></h2>
                 <p>We here at Linil Visting Nurses, Inc. provide a wide range of quality services to help those in need of  
                    dependable healthcare. From Therapy-to-Nursing, these services we bring are delivered with the utmost
                    kindess and care to meet your home care needs.
@@ -150,7 +164,7 @@
                         time to take a break from their duties and rest or travel. In 
                         the meantime, the service will take care of all the patients needs. 
                     </p>
-                    <a href="/htmlServices/RCservicePage.html" title="Go to Respite Care Page" class="learnButton">Learn More</a>
+                    <a href="/htmlServices/respiteservicePage.html" title="Go to Respite Care Page" class="learnButton">Learn More</a>
                     <a href="consultationPage.html" title="Go to Consulation Page" class="scheduleButton">Schedule Consultation</a>  
                 </div>
             </div>
@@ -205,6 +219,35 @@
     
 </footer>
 
+<!-- Functionality for Navigation Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdown = document.querySelector(".dropdown");
+  
+      if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      }
+  
+      if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          dropdown.classList.toggle("active");
+        });
+      }
+  
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+          navMenu.classList.remove("show");
+          dropdown.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
 </body>
-
-
+</html>
