@@ -2,178 +2,380 @@
 
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linil Visiting Nurses INC.</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Welcome | Linil Visiting Nurses INC.</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/styles/homepageStyle.css">
+    <link rel="stylesheet" href="/styles/header_footer_NavStyle.css">
 </head>
-<header> <!--Header of Website-->
 
-    <!-- <div class="dropdown">
-
-        <button>MENU</button>
-            <div class="content">
-                <a href="index.html">Home</a>
-                <a href="aboutPage.html">About Linil</a>
-                <a href="healthServices.html">Health Services</a>
-                <a href="scheduleConsulation.html">Schedule Consultation</a>
-                <a href="contactUs.html">Contact Us</a>
-            </div>
-    </div> -->
-    
-    <body id="logoPosition">
-
-        <div>
-            <a href="index.html" target=_self title="Go to Home Page">
-                <img src="/TEMP/Linil Logo.png" height="155" width= "155" alt="Linil Logo" title="Home Page"> 
-            </a>
+<body>
+<header>
+        <div class="flex-container"> <!--Navigation Bar-->
+            <div class="contact">Phone: (407)-790-4848</div>
+            <div class="contact">Email: patientinfo@linilvisitingnurses.com</div>   
+            <div class="contact">Florida State License: #299991827</div>    
         </div>
-        
-        <h1 id="headerTitle"> 
-            LINIL VISITING<br>NURSES, INC.<br>
-            <span>Medicare-Certified and CHAP Accredited Home Health in Central Florida</span>
-        </h1>
-        
-    </body>
 
+        <div class="header-container">
+            <button class="hamburger" id="hamburger">&#9776;</button> <!-- ☰ -->
+            <div class="logo">
+                <a href="index.html" target=_self title="Go to Home Page">
+                    <img src="/images/Linil Logo.png" alt="Linil Logo" title="Home Page Logo"> 
+                </a>
+            </div>
+
+            <div class ="headerTitle">
+                <a href="index.html" target=_self title="Go to Home Page">
+                    LINIL VISITING<br><span>NURSES INC.</span>
+                </a>
+            </div>
+
+            <div class="searchBar">
+                <label for="search"></label>
+                <input type="search" id="search" placeholder="Search...">
+            </div>
+        </div>
+
+        <nav class="navbar-container">
+            <ul class="nav" id="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutPage.html">About Linil</a></li>
+              <li><a href="careersPage.html">Careers</a></li>
+              
+              <li class="dropdown">
+                <a href="healthservicePage.html">Health Services <span class="dropdown-toggle">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="therapyservicePage.html">Therapy Services</a></li>
+                  <li><a href="nursingservicePage.html">Nursing Services</a></li>
+                  <li><a href="otherservicePage.html">Medical Social Services</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown">
+                <a href="contactPage.html">Contact <span class="dropdown-toggle">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="contactPage.html">Contact Us</a></li>
+                  <li><a href="consultationPage.html">Schedule Consultation</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
 </header>
 
-    <body> <!--Navigation Bar Links-->
+<main>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">About Linil</a></li>
-                <li><a href="">Health Services</a></li>
-                <li><a href="">Schedule Consulation</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!--Section 1-->
+    <section class="home-container"> 
+        <div class ="home-box">
+            <div class="slider-wrapper">
+                <div class="slider" id="slider">
+                  <div class="slide">
+                    <img src="/images/slide-image-1.jpg" alt="Slide 1" loading="lazy" />
+                    <div class="caption-container" id="caption-slide-1">
+                        <div class="caption-box">
+                            <h2>Linil: Home Care from the Heart</h2>
+                            <p>Linil Visiting Nurses, Inc. is a Medicare-Certified and CHAP-Accredited Home Health Agency
+                                serving the Greater Central Florida area. We help people recover from illness, injury,
+                                surgery, hospitalization and manage chronic conditions so that you can stay safe and
+                                independent in your own home.
+                            </p>
+                            <a href="aboutPage.html" class="caption-btn">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+                  
+              
+                  <div class="slide">
+                    <img src="/images/slide-image-2.jpg" alt="Slide 2" loading="lazy" />
+                    <div class="caption-container" id="caption-slide-2">
+                        <div class="caption-box">
+                            <h2>Our Health Services</h2>
+                            <p>We here at Linil Visting Nurses, Inc. provide a wide range of quality services to help those in
+                               need of dependable healthcare. From Therapy-to-Nursing, these services we bring are delivered
+                               with the utmost kindess and care to meet your home care needs.</p>
+                            <a href="healthservicePage.html" class="caption-btn">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="slide">
+                    <img src="/images/slide-image-3.jpg" alt="Slide 3" loading="lazy" />
+                    <div class="caption-container" id="caption-slide-3">
+                        <div class="caption-box">
+                            <h2>Join Our Team</h2>
+                            <p>At Linil Visiting Nurses, we are a dedicated group of professionals devoted to providing patients
+                               with the highest quality of home healthcare services. If you have the passion and talent for helping
+                               those in need, advance your career now and join our team. </p>
+                            <a href="careersPage.html" class="caption-btn">See Careers</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
 
-    </body> 
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
 
-<main> <!--Main Content-->
+                <div class="slider-dots" id="slider-dots"></div>
+            </div>
+        </div>
+</section>
+
+    <div class="schedule-container">
+        <div class="schedule-box">
+            <h2>For more information:<br>Schedule a Consultation</h2>
+
+            <a href="consultationPage.html" target=_self title="Go to Consultation Page">
+                <button>Get Started</button>
+            </a>
+        </div>
+    </div>
+
+    <!--Section 2-->
+    <section class="CHAP-container"> 
+        <div class="CHAP-box">
+            <h2>Well Qualified and<span><br>Medically-Certified</span> </h2><br>
+            <p>
+               Linil Visiting Nurses, Inc. is Medicare-Certified
+               and has been accredited by the Community Health
+               Accreditation Program (CHAP) since March 7th, 2013.
+            </p>
+        </div>
+        <div class="CHAP-image"><img src="/images/CHAP_Gold_Seal.png" alt="CHAP" title="CHAP Seal Image"></div>
+    </section>
+
+
+    <!--Section 3-->
+    <section class="location-container">
+        <div class="location-box">
+            <h2>Trusted and Dependable<br> <span>Homecare Service</span></h2><br>
+            <p>
+                Since 2002, we have been serving the Central Florida area and
+                providing extraordinary home health care to seniors in Orlando
+                and its surrounding area.
+                <br><br>
+                These locations include Winter Park, Altamonte Springs,
+                Casselberry, Winter Springs, Winter Garden, Ocoee,
+                Oviedo, Sanford, Lake Mary and much more. 
+            </p>
+        </div>
+        <div class="location-image"><img src="/images/homecare-service-image.png" alt="Homecare Service Image"/></div>
+    </section>
+
+
+    <!--Section 4-->
+    <section class="card-container">
+        <div class="card">
+            <img src="/images/therapy-service-image.jpg" alt="Therapy Service"/>
+            <div class="card-content">
+                <h3><span>THERAPY</span> SERVICES</h3>
+                <p>
+                    We offer Physical, Occupational, and Speech Therapy Services.
+                    All of our therapists serve as part of your interdisciplinary care
+                    team. Your care team is in constant communication, and provides each
+                    other with updates on how you are doing and reports changes of
+                    your progress and health.
+                </p>
+                <a href="therapyservicePage.html" title="Go to Therapy Service Page" class="readButton">Read More</a>
+                <a href="consultationPage.html" title="Go to Consultation Page" class="scheduleButton">Schedule Consultation</a>  
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/nurse-service-image.jpg" alt="Nursing Service"/>
+            <div class="card-content">
+                <h3><span>NURSING</span> SERVICES</h3>
+                <p>
+                    Our skilled nursing services are provided by a Registered Nurse (RN)
+                    or Licensed Practical Nurse (LPN) with training an exprience in
+                    providing care in the home. Your nurse will communicate frequently with
+                    your physician to update your plan of care. They will also be responsible
+                    for your initial evaluation and re-evaluations for care.
+                </p>
+                <a href="nursingservicePage.html" title="Go to Nursing Service Page" class="readButton">Read More</a> 
+                <a href="consultationPage.html" title="Go to Consultation Page" class="scheduleButton">Schedule Consultation</a> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/other-service-image.jpg" alt="Other Service"/>
+            <div class="card-content">
+                <h3><span>MEDICAL SOCIAL</span> SERVICES</h3>
+                <p>
+                   We offer other services such as Medical Social Worker (MSW),
+                   Home Health Aides (HHA), Companion, Personal Care Assistance, and Respite
+                   Care to meet any of your home care needs. Anytime you receive services from an aide
+                   or assistant, they will be supervised by one of your nurses or therapists. 
+                </p>
+                <a href="otherservicePage.html" title="Go to Other Service Page" class="readButton">Read More</a>
+                <a href="consultationPage.html" title="Go to Consultation Page" class="scheduleButton">Schedule Consultation</a>  
+            </div>
+        </div>
+    </section>
 
     
-    <section class="homepageImage"> <!--Section 1-->
-        
-        <div class="section1"> 
-
-            <div>
-                <h2>Linil: Home Care from the Heart</h2>
+    <!--Section 5-->
+        <section class="career-container">
+            <div class="career-image"><img src="/images/career-image.png" alt="Career Image"/></div>
+            <div class="career-box">
+                <h2>Careers at<br><span>Linil Visiting Nurses</span></h2><br>
                 <p>
-                    Linil Visiting Nurses, Inc. is a Medicare-Certified and CHAP-Accredited Home Health Agency serving the<br>
-                    Greater Central Florida area.  We help people recover from illness, injury or surgery, avoid hospitalization,<br>
-                    and manage chronic conditions so that you stay safe and independent in your own home.
-                </p> 
+                    Have the opportunity to join our team of qualified
+                    Nurses and find the career most suited for you.
+                </p><br>
 
-                <a href="" target=_self title="Go to About Page">
-                   <button>Learn More</button> 
+                <a href="careersPage.html" target=_self title="Go to Careers Page">
+                    <button>See Careers</button>
                 </a>
                 
             </div>
-            
+        </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-container">
+        <div class="footer-title-box">
+            <h2>Linil Visiting<br>Nurses Inc.</h2><br>
         </div>
 
-    </section>
-
-    <aside class="graySection">
-
-        <div>
-            <h3>For more information:<br>Schedule a Consulation</h3>
-
-            <a href="" target=_self title="Go to About Page">
-                <button>GET STARTED</button>
-            </a>
-
-        </div>
-
-    </aside>
-    
-    <section class="section2"> <!--Section 2-->
-
-        <div class="section2Text">
-
-            <h2>COMPASSION & <span>SERVICE</span></h2>
-
-                <p> With Linil, you can expect to receive comprehensive<br>
-                    and compassionate care in the comfort and safety of<br>
-                    your own home.<br><br>
-                    Since 2002, we have been serving the Central Florida<br> 
-                    area and providing extraordinary home health care to<br>
-                    seniors in Orlando and its surrounding area, including<br>
-                    Winter Park, Apopka, Altamonte Springs, Casselberry,<br>
-                    Winter Springs, Winter Garden, Ocoee, Oviedo, Sanford,<br>
-                    Lake Mary and much more.
-                </p>
-
-        </div>
-        
-    </section>
-
-    
-    <section class="section3"> <!--Section 3-->
-
-        <div>
-            <h2>QUALITY <span>MEDICARE AT HOME</span></h2>
-            <p> Linil Visiting Nurses, INC. is able to provide all of<br>
-                the services you might need after a hospital stay<br>
-                or manage any chronic conditions you might be<br>
-                experiencing.<br><br>
-            </p>
-
-            
-        </div>
-
-        <div>
-            <h3>Services</h3>    
-            <p>Linil Visiting Nurses provides these medically<br>
-                   supervised services to the patient at home:
-                </p>
-                <ul>
-                    <li>Skilled Nursing Care</li>
-                    <li>Physical Therapy</li>
-                    <li>Occupational Therapy</li>
-                    <li>Speech Therapy</li>
-                    <li>Social Services</li>
-                    <span>See More >></span>
-                </ul>
-        </div>
-        
-    </section>
-
-    <section class="section4"> <!--Section 4-->
-    
-        <div>
-            <h2>QUALIFIED SERVICE</h2>
-            <p> 
-                We here at Linil Visiting Nurses are an accredited<br>
-                service qualified to help you with all your needs.
-            </p>
-
-            <img src="/Images/CHAP_Gold_Seal.png" height="300" alt="Elderly Image" title="Home Page"><br>
-        </div>
-
-    </section>
-
-    <footer id="footerSection">
-
-        <div>
-            <h2>Linil Visiting<br>Nurses Inc.</h2>
-
+        <div class="footer-contact-box">
             <h3>Contact Us</h3>
             <p>
-                Address: 101 E. Faith Terrace, Maitland, FL 32751<br>
+                101 E. Faith Terrace,<br>
+                Maitland, FL 32751<br><br>
                 Phone: (407) 790-4848<br>
                 Fax: (407) 790-4847<br>
                 Email: patientinfo@linilvisitingnurses.com<br>
             </p>
+            </div>
+        
+        <div class="footer-quicklinks-box">
+            <h3>Quick Links</h3>
+            <ul class="quicklinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutPage.html">About Linil</a></li>
+                <li><a href="healthservicePage.html">Health Services</a></li>
+                <li><a href="careersPage.html">Careers</a></li>
+                <li><a href="consultationPage.html">Schedule Consultation</a></li>
+                <li><a href="contactPage.html">Contact Us</a></li>
+            </ul>
         </div>
 
-    </footer>
+            <div class="footer-policylinks-box">
+                <h3>Policies</h3>
+                <ul class="policylinks">
+                    <li><a href="/htmlPolicies/billingServicesPage.html">Billing Services</a></li>
+                    <li><a href="/htmlPolicies/privacyPolicyPage.html">Privacy Policy</a></li>
+                    <li><a href="/htmlPolicies/rightsResponsibilitiesPage.html">Patient Rights and Responsibilities</a></li>
+                </ul>
+            </div>
+    </div>
 
-</main>
+    <div class="copyright-box">
+        © All rights reserved. Copyright 2025. Arrojo Holdings, LLC
+    </div>
+    
+</footer>
+
+ <!-- Functionality for Navigation Menu -->
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdown = document.querySelector(".dropdown");
+  
+      if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      }
+  
+      if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          dropdown.classList.toggle("active");
+        });
+      }
+  
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+          navMenu.classList.remove("show");
+          dropdown.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+ <!-- Functionality for Image Slider -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slider = document.getElementById("slider");
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.querySelector(".slider-btn.prev");
+      const nextBtn = document.querySelector(".slider-btn.next");
+      const dotsContainer = document.getElementById("slider-dots");
+      let currentIndex = 0;
+  
+      // Dynamically create dot indicators
+      slides.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          goToSlide(i);
+        });
+        dotsContainer.appendChild(dot);
+      });
+  
+      const dots = document.querySelectorAll(".dot");
+  
+      function updateSliderPosition() {
+        const slideWidth = window.innerWidth;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        updateActiveDot();
+      }
+  
+      function goToSlide(index) {
+        currentIndex = index;
+        updateSliderPosition();
+      }
+  
+      function updateActiveDot() {
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[currentIndex].classList.add("active");
+      }
+  
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSliderPosition();
+      }
+  
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSliderPosition();
+      }
+  
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
+  
+      // Resize behavior
+      window.addEventListener("resize", updateSliderPosition);
+  
+      // Optional: Auto-slide every X seconds (pause on hover)
+      let autoSlideInterval = setInterval(nextSlide, 5000);
+      slider.addEventListener("mouseenter", () => clearInterval(autoSlideInterval));
+      slider.addEventListener("mouseleave", () => autoSlideInterval = setInterval(nextSlide, 5000));
+  
+      updateSliderPosition(); // Initial call
+    });
+  </script>
+  
+</body>
 
 </html>
+
+
