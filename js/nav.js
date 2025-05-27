@@ -3,5 +3,5 @@ slider.addEventListener('transitionend', () => {
   });
 
 // JS auto-slide interval
-setInterval(nextSlide, 6000); // fine, but make sure transitions complete in time
+setInterval(nextSlide, 6000); 
 
