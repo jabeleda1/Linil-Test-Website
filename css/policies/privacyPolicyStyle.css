@@ -15,15 +15,15 @@ img{
     display: block;
 }
 
-.policy-privacy-container {
-    background-image: url(../images/contact-image.png);
+.policy-title-container {
+    background-image: url(../../images/contact-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
     
 }
 
-.policy-privacy-box{
+.policy-title-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ img{
     padding: 100px;
 }
 
-.policy-privacy-box h2 {
+.policy-title-box h2 {
     font-size: 40px;
     font-weight: bold;
 }
