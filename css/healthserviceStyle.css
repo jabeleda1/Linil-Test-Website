@@ -58,7 +58,7 @@ img{
 }
 
 .health-service-container {
-    background-image: url(/images/header-health-service-image.png);
+    background-image: url(images/header-health-service-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
