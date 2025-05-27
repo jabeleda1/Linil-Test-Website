@@ -16,7 +16,7 @@ img{
 }
 
 .about-container {
-    background-image: url(images/header-about-image.png);
+    background-image: url(../images/header-about-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
