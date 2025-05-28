@@ -229,6 +229,20 @@
     background-color: rgb(66, 66, 66);
     color: white;
   }
+
+  .copyright-box p {
+    padding-left: 2%;
+  }
+
+  .copyright-box a {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  .copyright-box a:hover {
+    color: rgb(186, 66, 69);
+  }
   
   /* RESPONSIVE: Tablets and Mobile */
   @media (max-width: 768px) {
@@ -322,6 +336,10 @@
       font-size: 13px;
       text-align: center;
     }
+
+    .copyright-box a {
+    font-size: 12px;
+  }
   }
 
   @media (min-width: 601px) and (max-width: 991px) {
@@ -372,5 +390,9 @@
     .footer-title-box h2 {
       font-size: 40px;
     }
+
+    .copyright-box a {
+    font-size: 12px;
+  }
   }
   
