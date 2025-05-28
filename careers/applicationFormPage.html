@@ -80,35 +80,45 @@
             <h2>Application Form</h2>
         </div>
 
-        <form class="form-box" action="index.php" method="POST" enctype="multipart/form-data">
+        <form class="form-box" action="https://formsubmit.co/648181fbcf90e3f2d0a0b9d8a31e1502" method="POST" enctype="multipart/form-data">
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!--Success Page-->
+            <input type="hidden" name="_next" value="https://jabeleda1.github.io/Linil-Test-Website/success.html">
+            
+            
             <div class="info-section-1">
                 <div class="info">
                     <label for="firstname">First Name <span>*</span></label>
-                    <input type="text" id="firstname" required>
+                    <input type="text" name="First&nbsp;Name" id="firstname" required>
                 </div>
                 
                 <div class="info">
                     <label for="lastname">Last Name <span>*</span></label>
-                    <input type="text" id="lastname" required> 
+                    <input type="text" name="Last&nbsp;Name" id="lastname" required> 
                 </div>
             </div>
             
             <div class="info-section-2">
                 <div class="info">
                     <label for="phone">Phone <span>*</span></label>
-                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
 
                 <div class="info">
                     <label for="email">Email<span> *</span></label>
-                    <input type="email" id="email" maxlength="50" required>
+                    <input type="email" name="Email" id="email" maxlength="50" required>
                 </div>
             </div>
 
             <div class="info-section-3">
                 <div class="info">
                     <label for="position">Job Position <span>*</span></label><br>
-                    <select name ="position" id="position" required>
+                    <select name ="Position" id="position" required>
                         <option value="">Select Job Position...</option>
                         <option value="">Registered Nurse</option>
                         <option value="">Physical Therapy</option>
@@ -118,12 +128,12 @@
                 </div>
 
                 <div class="info">
-                    <label for="file">Upload Cover Letter, Resume, & References <span>*</span></label><br>
+                    <label class="upload-box" for="file">Upload Cover Letter, Resume, & References <span>*</span></label><br>
                     <input type="file" id="file" required>
                 </div>
-    
-                <div class="submit-button"><input type="submit" id="submit"></div>
             </div>
+
+            <button class="submit-button" type="submit" name="submit">Submit</button>
 
         </form>
     </div>        
