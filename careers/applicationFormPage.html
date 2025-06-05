@@ -95,24 +95,24 @@
             <div class="info-section-1">
                 <div class="info">
                     <label for="firstname">First Name <span>*</span></label>
-                    <input type="text" name="First&nbsp;Name" id="firstname" required>
+                    <input type="text" name="First&nbsp;Name" placeholder="John" id="firstname" required>
                 </div>
                 
                 <div class="info">
                     <label for="lastname">Last Name <span>*</span></label>
-                    <input type="text" name="Last&nbsp;Name" id="lastname" required> 
+                    <input type="text" name="Last&nbsp;Name" placeholder="Smith" id="lastname" required> 
                 </div>
             </div>
             
             <div class="info-section-2">
                 <div class="info">
                     <label for="phone">Phone <span>*</span></label>
-                    <input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input type="tel" name="Phone" id="phone" placeholder="407-790-4848" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
 
                 <div class="info">
                     <label for="email">Email<span> *</span></label>
-                    <input type="email" name="Email" id="email" maxlength="50" required>
+                    <input type="email" name="Email" placeholder="johnsmith@gmail.com" id="email" maxlength="50" required>
                 </div>
             </div>
 
@@ -120,17 +120,17 @@
                 <div class="info">
                     <label for="position">Job Position <span>*</span></label><br>
                     <select name ="Position" id="position" required>
-                        <option value="">Select Job Position...</option>
-                        <option value="">Registered Nurse</option>
-                        <option value="">Physical Therapy</option>
-                        <option value="">Occupational Therapy</option>
-                        <option value="">Home Health Aide</option>
+                        <option> Select Job Position...</option>
+                        <option>Registered Nurse</option>
+                        <option>Physical Therapy</option>
+                        <option>Occupational Therapy</option>
+                        <option>Home Health Aide</option>
                     </select>
                 </div>
 
                 <div class="info">
-                    <label class="upload-box" for="file">Upload Cover Letter, Resume, & References <span>*</span></label><br>
-                    <input type="file" id="file" required>
+                    <label class="upload-box" for="file">Upload Cover Letter, Resume, & References (.pdf,.dox)<span>*</span></label><br>
+                    <input type="file" name="attachment" accept=".pdf,.docx" id="file" required>
                 </div>
             </div>
 

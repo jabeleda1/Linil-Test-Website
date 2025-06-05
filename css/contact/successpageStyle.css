@@ -84,3 +84,49 @@ img{
 .logo span {
     color: rgb(199, 85, 87);
 }
+
+@media (max-width: 768px) {
+    .success-container {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .success-container h2 {
+        line-height: 1.2;
+        padding-bottom: 6%;
+    }
+
+    .success-container a {
+        padding-top: 4%;
+    }
+
+    .logo img {
+        margin: auto;
+        padding: auto;
+        max-width: 120px;
+    }
+   
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .success-container {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .success-container h2 {
+        line-height: 1.2;
+        padding-bottom: 6%;
+    }
+
+    .success-container a {
+        padding-top: 4%;
+    }
+
+    .logo img {
+        margin: auto;
+        padding: auto;
+        max-width: 120px;
+    }
+
+  }
